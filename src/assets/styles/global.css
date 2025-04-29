@@ -139,7 +139,8 @@
 ::-webkit-scrollbar-thumb {
   background: none;
   border: #888 solid 2px;
-  border-radius: 6px;
+  height: 50px;
+  /* border-radius: 6px; */
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -154,7 +155,7 @@ html {
 
 html:hover ::-webkit-scrollbar {
   width: 12px;
-  height: 12px;
+  height: 0px;
 }
 
 @keyframes fadeInLeft {

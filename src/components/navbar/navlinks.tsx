@@ -42,17 +42,24 @@ export function DesktopNavLinks() {
     <ul className="flex items-center gap-4">
       {navLinks.map((link) => (
         <li key={link.href}>
-          <Link
-            to={link.href}
-            className={cn(
+            <Link
+              to={link.href}
+              className={cn(
               'flex items-center gap-1',
-              '!text-white hover:!underline',
-              'transition-colors duration-200',
-              'text-lg'
-            )}
-          >
-            <span>{link.title}</span>
-          </Link>
+              'relative group',
+              '!text-white',
+              'text-lg',
+              'transition-transform duration-300 transform hover:translate-x-2'
+              )}
+            >
+              <span>{link.title}</span>
+              <span
+              className={cn(
+                'absolute bottom-0 left-0 h-[2px] w-0 bg-white',
+                'transition-all duration-300 group-hover:w-full'
+              )}
+              ></span>
+            </Link>
         </li>
       ))}
     </ul>

@@ -40,6 +40,7 @@ export function Footer() {
               <li key={index}>
                 <Link
                   to={link.href}
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                   className="text-neutral-400 text-lg hover:text-white"
                 >
                   {link.label}
