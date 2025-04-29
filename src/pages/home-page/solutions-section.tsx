@@ -91,19 +91,58 @@ const solutions = [
       'Public Address System',
     ],
   },
-  // {
-  //   image: st7,
-  //   title: 'Services',
-  //   details: [
-  //     'Engineering',
-  //     'Design',
-  //     'Installation',
-  //     'Commissioning',
-  //     'Maintenance',
-  //     'Training',
-  //     'Consulting',
-  //   ],
-  // },
+  {
+    image: st6,
+    title: 'Services',
+    details: [
+      'Engineering',
+      'Design',
+      'Installation',
+      'Commissioning',
+      'Maintenance',
+      'Training',
+      'Consulting',
+    ],
+  },
+  {
+    image: st6,
+    title: 'Services',
+    details: [
+      'Engineering',
+      'Design',
+      'Installation',
+      'Commissioning',
+      'Maintenance',
+      'Training',
+      'Consulting',
+    ],
+  },
+  {
+    image: st6,
+    title: 'Services',
+    details: [
+      'Engineering',
+      'Design',
+      'Installation',
+      'Commissioning',
+      'Maintenance',
+      'Training',
+      'Consulting',
+    ],
+  },
+  {
+    image: st6,
+    title: 'Services',
+    details: [
+      'Engineering',
+      'Design',
+      'Installation',
+      'Commissioning',
+      'Maintenance',
+      'Training',
+      'Consulting',
+    ],
+  },
 ];
 
 export function SolutionsSection() {
@@ -150,7 +189,7 @@ export function SolutionsSection() {
             >
               {solutions.map((solution, index) => {
                 const CONTAINER_SIZE = 500;
-                const CIRCLE_RADIUS = 200;
+                const CIRCLE_RADIUS = 210;
                 const CENTER_POSITION = CONTAINER_SIZE / 2;
 
                 const angle = (index * (2 * Math.PI)) / solutions.length;
@@ -195,9 +234,9 @@ export function SolutionsSection() {
 }
 
 function SolutionItem({ solution }: { solution: (typeof solutions)[number] }) {
-  const [isHovered, setIsHovered] = React.useState(false);
+  // const [isHovered, setIsHovered] = React.useState(false);
   return (
-    <Popover open={isHovered}>
+    <Popover>
       <PopoverTrigger>
         <Tilt
           className="background-stripes parallax-effect-glare-scale cursor-pointer"
@@ -206,14 +245,15 @@ function SolutionItem({ solution }: { solution: (typeof solutions)[number] }) {
           glareEnable
           glareMaxOpacity={0.45}
           glareBorderRadius="50%"
-          onEnter={() => setIsHovered(true)}
-          onLeave={() => setIsHovered(false)}
-        >
+          // onEnter={() => setIsHovered(true)}
+          // onLeave={() => setIsHovered(false)}
+          >
           <div className="flex h-30 w-30 items-center justify-center rounded-full bg-black transition-transform hover:scale-110">
             <img
               src={solution.image}
               alt={solution.title}
               className="h-15 w-15 shrink-0 object-contain"
+              title={solution.title}
             />
           </div>
         </Tilt>

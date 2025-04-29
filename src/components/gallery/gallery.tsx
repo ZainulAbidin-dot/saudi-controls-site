@@ -47,7 +47,7 @@ function ImageGalleryItem({ imageItem }: { imageItem: ImageItem }) {
               {imageItem.description}
             </p>
           </div>
-          <p className={styles['gallery-item__attribute']}>{imageItem.alt}</p>
+          {/* <p className={styles['gallery-item__attribute']}>{imageItem.alt}</p> */}
         </div>
       </DialogTrigger>
       <DialogContent className="flex !h-[90vh] !max-w-[90vw] flex-col">
@@ -59,7 +59,7 @@ function ImageGalleryItem({ imageItem }: { imageItem: ImageItem }) {
           <img
             src={imageItem.src}
             alt={imageItem.alt}
-            className="mx-auto h-full max-h-full w-full max-w-full object-cover object-center"
+            className="mx-auto h-full max-h-full w-full max-w-full object-contain object-center"
           />
         </div>
       </DialogContent>

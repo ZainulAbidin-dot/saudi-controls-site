@@ -410,6 +410,20 @@ const events = [
     cardDetailedText:
       'SCL secured a project with the Royal Saudi Air Force to design, supply, install, and commission Atmosphere Detection Devices.',
   },
+  {
+    title: '2024 - Ongoing',
+    cardTitle: 'Dirayh Gate – Infrastructure project',
+    cardSubtitle: 'SCADA System',
+    cardDetailedText:
+      'SCL secured a project to design, supply, install Detection Devices.',
+  },
+  {
+    title: '2024 - Ongoing',
+    cardTitle: 'King Abdullah International Airport – New Jazan Airport “Low Current and ICT systems”',
+    cardSubtitle: 'ICT systems for new airport',
+    cardDetailedText:
+      'SCL secured a project with King Abdullah International Airport to design, supply, install, and commission ICT Systems.',
+  }
 ];
 
 export function HistoryPage() {
@@ -433,7 +447,7 @@ export function HistoryPage() {
 function HistoryTimeline() {
   return (
     <div className="relative">
-      <div className="absolute top-0 bottom-0 left-4 w-1 bg-black md:left-1/2 md:-translate-x-1/2" />
+      <div className="absolute top-0 bottom-0 left-4 w-1 rounded-lg bg-black md:left-1/2 md:-translate-x-1/2" />
       {[...events].reverse().map((event, index) => (
         <div
           key={index}

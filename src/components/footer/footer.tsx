@@ -40,7 +40,7 @@ export function Footer() {
               <li key={index}>
                 <Link
                   to={link.href}
-                  className="text-neutral-400 hover:text-white"
+                  className="text-neutral-400 text-lg hover:text-white"
                 >
                   {link.label}
                 </Link>
@@ -64,7 +64,7 @@ export function Footer() {
             <a
               href={pdfFile}
               download
-              className="inline-block px-4 py-2 mt-2 text-white bg-blue-600 rounded-sm hover:bg-blue-700"
+              className="inline-block px-4 py-2 mt-2 text-white bg-neutral-400/40 rounded-sm hover:bg-neutral-500/40"
             >
               Download Brochure (PDF)
             </a>

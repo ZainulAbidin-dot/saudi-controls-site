@@ -69,13 +69,13 @@ const galleryData: ImageItem[] = [
     title: 'Faisaliya Tower',
     description: '',
   },
-  {
-    id: '9',
-    src: 'https://images.pexels.com/photos/3774243/pexels-photo-3774243.jpeg?cs=srgb&dl=pexels-souvenirpixels-3774243.jpg&fm=jpg',
-    alt: 'Nature landscape',
-    title: 'King Fahad Airbase - Taif',
-    description: '',
-  },
+  // {
+  //   id: '9',
+  //   src: 'https://images.pexels.com/photos/3774243/pexels-photo-3774243.jpeg?cs=srgb&dl=pexels-souvenirpixels-3774243.jpg&fm=jpg',
+  //   alt: 'Nature landscape',
+  //   title: 'King Fahad Airbase - Taif',
+  //   description: '',
+  // },
 ];
 
 export function GallerySection() {

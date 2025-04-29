@@ -72,7 +72,7 @@ export function OperationAndMaintenanceSection() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {operationsMaintenance.map((item, index) => (
               <div key={index} className="group perspective">
-                <div className="relative w-full h-[400px] transform-style-3d transition-transform duration-1500 group-hover:rotate-y-180">
+                <div className="relative w-full h-[200px] transform-style-3d transition-transform duration-1500 group-hover:rotate-y-180">
                   {/* Front Side */}
                   <div className="absolute inset-0 flex flex-col items-center justify-center bg-white text-gray-900 p-6 rounded-lg backface-hidden shadow-lg">
                     <img
@@ -84,7 +84,7 @@ export function OperationAndMaintenanceSection() {
                         mixBlendMode: "multiply",
                       }}
                     />
-                    <h3 className="mt-4 text-2xl font-bold text-center card__z">
+                    <h3 className="my-2 text-2xl font-bold text-center card__z">
                       {item.title}
                     </h3>
                   </div>
