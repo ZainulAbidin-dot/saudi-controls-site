@@ -51,6 +51,7 @@ export function DesktopNavLinks() {
               'text-lg',
               'transition-transform duration-300 transform hover:translate-x-2'
               )}
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               <span>{link.title}</span>
               <span
