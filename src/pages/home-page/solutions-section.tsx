@@ -8,6 +8,7 @@ import st3 from '@/assets/images/st3.png';
 import st4 from '@/assets/images/st4.png';
 import st5 from '@/assets/images/st5.png';
 import st6 from '@/assets/images/st6.png';
+import st7 from '@/assets/images/st7.png';
 import {
   Popover,
   PopoverContent,
@@ -32,10 +33,17 @@ const solutions = [
   },
   {
     image: st2,
+    title: 'Electric Vehicles Charging Systems',
+    details: [
+      'EV charging for Smart Cities',
+    ],
+  },
+  {
+    image: st3,
     title: 'Industrial Automation',
     details: [
       'PLC / SCADA Systems',
-      'Industrial Networks',
+      'Machine to Machine (M2M)',
       'Control Panels',
       'Instrumentation',
       'Industrial Communication',
@@ -43,20 +51,15 @@ const solutions = [
     ],
   },
   {
-    image: st3,
-    title: 'Communication',
+    image: st4,
+    title: 'Transportation Technology',
     details: [
-      'Structured Cabling',
-      'Fiber Optic Networks',
-      'IP Telephony',
-      'Wireless Networks',
-      'Data Centers',
-      'Public Address System',
+      'Intelligent Traffic System',
     ],
   },
   {
-    image: st4,
-    title: 'Security',
+    image: st5,
+    title: 'Telecommunication & IT Networking',
     details: [
       'CCTV Systems',
       'Access Control Systems',
@@ -67,66 +70,20 @@ const solutions = [
     ],
   },
   {
-    image: st5,
-    title: 'Audio Visual',
+    image: st6,
+    title: 'Security System',
     details: [
-      'Conference Room AV',
-      'Digital Signage',
-      'Video Walls',
-      'Interactive Displays',
-      'Control Systems',
-      'Public Address System',
+      'Closed Circuit Television',
+      'X-Ray Cargo scanners technology',
+      'Perimeter Intrusion Detection Systems',
+      'Access Control System',
     ],
   },
   {
-    image: st6,
-    title: 'Software',
+    image: st7,
+    title: 'Artificial Intelligence',
     details: [
-      'Building Management Software',
-      'Energy Management Software',
-      'Security Management Software',
-      'Industrial Automation Software',
-      'Communication Software',
-      'Public Address System',
-    ],
-  },
-  {
-    image: st6,
-    title: 'Services',
-    details: [
-      'Engineering',
-      'Design',
-      'Installation',
-      'Commissioning',
-      'Maintenance',
-      'Training',
-      'Consulting',
-    ],
-  },
-  {
-    image: st6,
-    title: 'Services',
-    details: [
-      'Engineering',
-      'Design',
-      'Installation',
-      'Commissioning',
-      'Maintenance',
-      'Training',
-      'Consulting',
-    ],
-  },
-  {
-    image: st6,
-    title: 'Services',
-    details: [
-      'Engineering',
-      'Design',
-      'Installation',
-      'Commissioning',
-      'Maintenance',
-      'Training',
-      'Consulting',
+      'Intelligent traffic control systems',
     ],
   },
   {

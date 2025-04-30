@@ -126,11 +126,6 @@ export function SectionWrapperLeft({
         <div className="flex flex-col items-center gap-12 lg:flex-row">
           {/* Left: Quote & Image */}
           <div className="background-stripes parallax-effect-glare-scale space-y-6 px-2 py-6 lg:w-1/2">
-            <div className="text-center">
-              <blockquote className="mt-4 text-gray-700 italic">
-                {solution.quote}
-              </blockquote>
-            </div>
             <Tilt
               className="parallax-effect-glare-scale"
               perspective={1000}
@@ -145,6 +140,11 @@ export function SectionWrapperLeft({
                 className={solution.image.class}
               />
             </Tilt>
+            <div className="text-center">
+              <blockquote className="mt-4 text-gray-700 italic">
+                {solution.quote}
+              </blockquote>
+            </div>
           </div>
 
           {/* Right: Title & Content */}

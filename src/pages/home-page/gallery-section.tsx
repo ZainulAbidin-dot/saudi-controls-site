@@ -6,6 +6,10 @@ import p5 from '@/assets/images/projects/p5.jpg';
 import p6 from '@/assets/images/projects/p6.jpg';
 import p8 from '@/assets/images/projects/p8.png';
 import p9 from '@/assets/images/projects/p9.png';
+import p10 from '@/assets/images/projects/p10.jpg';
+import p11 from '@/assets/images/projects/p11.jpg';
+import p12 from '@/assets/images/projects/p12.jpg';
+import p14 from '@/assets/images/projects/p13.jpg';
 import { ImageGallery, ImageItem } from '@/components/gallery/gallery';
 import { Wrapper } from '@/components/ui/wrapper';
 import { useFadeInAnimation } from '@/hooks/use-fadein-animation';
@@ -69,13 +73,34 @@ const galleryData: ImageItem[] = [
     title: 'Faisaliya Tower',
     description: '',
   },
-  // {
-  //   id: '9',
-  //   src: 'https://images.pexels.com/photos/3774243/pexels-photo-3774243.jpeg?cs=srgb&dl=pexels-souvenirpixels-3774243.jpg&fm=jpg',
-  //   alt: 'Nature landscape',
-  //   title: 'King Fahad Airbase - Taif',
-  //   description: '',
-  // },
+  {
+    id: '9',
+    src: p12,
+    alt: 'Nature landscape',
+    title: 'SABIC HQ Riyadh',
+    description: '',
+  },
+  {
+    id: '10',
+    src: p10,
+    alt: 'Nature landscape',
+    title: 'Al Rashid Tower - Al Khobar',
+    description: '',
+  },
+  {
+    id: '11',
+    src: p11,
+    alt: 'Nature landscape',
+    title: 'MOI HQ Riyadh',
+    description: '',
+  },
+  {
+    id: '13',
+    src: p14,
+    alt: 'Nature landscape',
+    title: 'Granada Center - Riyadh',
+    description: '',
+  },
 ];
 
 export function GallerySection() {

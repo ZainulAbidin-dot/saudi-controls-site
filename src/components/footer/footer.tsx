@@ -21,7 +21,7 @@ export function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-r from-neutral-800 to-neutral-950 pt-16 pb-8 text-white">
+    <footer className="bg-gradient-to-r from-neutral-800 to-neutral-950 pt-16 pb-8 text-white rounded-t-xl">
       <div className="container mx-auto grid grid-cols-1 gap-8 px-4 md:grid-cols-3">
         {/* Company Info */}
         <div className="group">
