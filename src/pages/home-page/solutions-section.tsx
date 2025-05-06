@@ -208,7 +208,7 @@ function SolutionItem({ solution }: { solution: (typeof solutions)[number] }) {
             <img
               src={solution.image}
               alt={solution.title}
-              className="h-15 w-15 shrink-0 object-contain"
+              className="h-17 w-17 shrink-0 object-contain"
               title={solution.title}
             />
           </div>
