@@ -1,21 +1,21 @@
 // import partner10 from '@/assets/images/om1.png';
-import partner6 from '@/assets/images/partner6.jpg';
-import partner7 from '@/assets/images/partner7.jpg';
-import partner8 from '@/assets/images/partner8.jpg';
-import partner9 from '@/assets/images/partner9.jpg';
-import partner10 from '@/assets/images/partner10.jpg';
-import partner11 from '@/assets/images/partner11.jpg';
-import partner12 from '@/assets/images/partner12.jpg';
-import partner13 from '@/assets/images/partner13.jpg';
-import partner14 from '@/assets/images/partner14.jpg';
-import partner15 from '@/assets/images/partner15.jpg';
-import partner16 from '@/assets/images/partner16.jpg';
-import partner17 from '@/assets/images/partner17.jpg';
-import partner18 from '@/assets/images/partner18.jpg';
-import partner19 from '@/assets/images/partner19.jpg';
-// import partner20 from '@/assets/images/partner20.jpg';
-import partner21 from '@/assets/images/partner21.png';
-import partner22 from '@/assets/images/partner22.png';
+import partner6 from '@/assets/images/partners/partner6.jpg';
+import partner7 from '@/assets/images/partners/partner7.jpg';
+import partner8 from '@/assets/images/partners/partner8.jpg';
+import partner9 from '@/assets/images/partners/partner9.jpg';
+import partner10 from '@/assets/images/partners/partner10.jpg';
+import partner11 from '@/assets/images/partners/partner11.jpg';
+import partner12 from '@/assets/images/partners/partner12.jpg';
+import partner13 from '@/assets/images/partners/partner13.jpg';
+import partner14 from '@/assets/images/partners/partner14.jpg';
+import partner15 from '@/assets/images/partners/partner15.jpg';
+import partner16 from '@/assets/images/partners/partner16.jpg';
+import partner17 from '@/assets/images/partners/partner17.jpg';
+import partner18 from '@/assets/images/partners/partner18.jpg';
+import partner19 from '@/assets/images/partners/partner19.jpg';
+import partner20 from '@/assets/images/partners/partner20.jpg';
+import partner21 from '@/assets/images/partners/partner21.png';
+import partner22 from '@/assets/images/partners/partner22.png';
 
 export const navLinks = [
   {
@@ -197,7 +197,7 @@ const partners = [
   partner17,
   partner18,
   partner19,
-  // partner20,
+  partner20,
 ];
 
 export { experiences, testimonials, projects, partners };
