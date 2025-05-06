@@ -20,8 +20,7 @@ const galleryData: ImageItem[] = [
     src: p1,
     alt: 'Mountain landscape',
     title: 'Al Qassim National Hospital',
-    description:
-      'Towering peaks pierce through misty clouds in this dramatic mountain landscape.',
+    description: '',
   },
   {
     id: '2',
@@ -116,7 +115,7 @@ export function GallerySection() {
           <h2 className="text-center text-3xl font-bold sm:text-4xl md:text-5xl">
             Our Projects
           </h2>
-          <ImageGallery imageItems={galleryData} />
+          <ImageGallery imageItems={[...galleryData].reverse()} />
         </div>
       </Wrapper>
     </section>
