@@ -2,13 +2,14 @@
 import Tilt from 'react-parallax-tilt';
 
 import img from '@/assets/images/bg2.webp';
-import st1 from '@/assets/images/st1.png';
-import st2 from '@/assets/images/st2.png';
-import st3 from '@/assets/images/st3.png';
-import st4 from '@/assets/images/st4.png';
-import st5 from '@/assets/images/st5.png';
-import st6 from '@/assets/images/st6.png';
-import st7 from '@/assets/images/st7.png';
+import st1 from '@/assets/images/solutions/st1.png';
+import st2 from '@/assets/images/solutions/st2.png';
+import st3 from '@/assets/images/solutions/st3.png';
+import st4 from '@/assets/images/solutions/st4.png';
+import st5 from '@/assets/images/solutions/st5.png';
+import st6 from '@/assets/images/solutions/st6.png';
+import st7 from '@/assets/images/solutions/st7.png';
+import st8 from '@/assets/images/solutions/st8.png';
 import {
   Popover,
   PopoverContent,
@@ -87,11 +88,10 @@ const solutions = [
     ],
   },
   {
-    image: st6,
+    image: st8,
     title: 'Services',
     details: [
       'Engineering',
-      'Design',
       'Installation',
       'Commissioning',
       'Maintenance',
