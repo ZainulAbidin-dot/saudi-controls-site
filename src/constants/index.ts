@@ -1,12 +1,12 @@
 // import partner10 from '@/assets/images/om1.png';
-import partner6 from '@/assets/images/partners/partner6.jpg';
+import partner6 from '@/assets/images/partners/partner6.png';
 import partner7 from '@/assets/images/partners/partner7.jpg';
 import partner8 from '@/assets/images/partners/partner8.jpg';
 import partner9 from '@/assets/images/partners/partner9.jpg';
 import partner10 from '@/assets/images/partners/partner10.jpg';
 import partner11 from '@/assets/images/partners/partner11.jpg';
 import partner12 from '@/assets/images/partners/partner12.jpg';
-import partner13 from '@/assets/images/partners/partner13.jpg';
+import partner13 from '@/assets/images/partners/partner13.png';
 import partner14 from '@/assets/images/partners/partner14.jpg';
 import partner15 from '@/assets/images/partners/partner15.jpg';
 import partner16 from '@/assets/images/partners/partner16.jpg';

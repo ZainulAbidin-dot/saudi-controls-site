@@ -21,7 +21,7 @@ import { useFadeInAnimation } from '@/hooks/use-fadein-animation';
 const solutions = [
   {
     image: st1,
-    title: 'Building Automation',
+    title: 'Building Management Systems',
     details: [
       'Building and Energy Management Systems',
       'HVAC Control',
@@ -127,10 +127,15 @@ export function SolutionsSection() {
               Solution & Technologies
             </h1>
             <p className="text-lg leading-relaxed text-gray-600">
-              Saudi Controls specializes in tailored high-tech solutions, spanning building automation, industrial systems, communications, and security.
+              Saudi Controls delivers cutting-edge, customized solutions across energy, utilities, and industrial sectors, designed to enhance operational efficiency and resilience.            </p>
+            <p className="my-6 text-lg leading-relaxed text-gray-600">              
+              From intelligent building management systems to advanced traffic systems, our expertise ensures seamless integration, reliability, and future-ready innovations for our clients. 
             </p>
             <p className="my-6 text-lg leading-relaxed text-gray-600">              
-              From intelligent building management to advanced security systems, our expertise ensures seamless integration, reliability, and future-ready innovations for our clients. 
+              Our solutions are designed to enhance operational efficiency, improve safety, and reduce costs, ensuring that our clients can focus on their core business while we take care of the technology.  
+            </p>
+            <p className="my-6 text-lg leading-relaxed text-gray-600">              
+              From smart cities and intelligent traffic management to perimeter intrusion detection systems and EV charging technologies, we deliver cutting-edge solutions for our clients. 
             </p>
           </div>
 

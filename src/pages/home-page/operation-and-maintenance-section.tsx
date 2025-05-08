@@ -2,7 +2,7 @@ import bms from '@/assets/images/operations/bms.png';
 import communications from '@/assets/images/operations/communications.png';
 import ev from '@/assets/images/operations/ev.png';
 import iot from '@/assets/images/operations/iot.png';
-import twinning from '@/assets/images/operations/twinning.png';
+import security from '@/assets/images/operations/security.png';
 import traffic from '@/assets/images/operations/traffic.png';
 import { Wrapper } from '@/components/ui/wrapper';
 import { useFadeInAnimation } from '@/hooks/use-fadein-animation';
@@ -28,7 +28,7 @@ const operationsMaintenance = [
   },
   {
     image: iot,
-    title: 'IoT',
+    title: 'IoT and AI',
     description:
       'We develop and deploy cutting-edge IoT solutions, enabling real-time data collection, intelligent automation, and seamless device integration to enhance operational efficiency and user experience.',
   },
@@ -36,13 +36,13 @@ const operationsMaintenance = [
     image: communications,
     title: 'Communication Systems',
     description:
-      'We design and implement advanced communication systems, including seamless connectivity, real-time data transmission, and integrated network solutions to enhance efficiency and user experience.',
+      'We execute modern communication systems, such as seamless connectivity, real-time data transmission between traffic system, and integrated network solutions, to improve efficiency and accuracy of Traffic system.',
   },
   {
-    image: twinning,
-    title: 'Digital Twinning',
+    image: security,
+    title: 'Security Systems',
     description:
-      'We design and implement advanced parking solutions, including automated ticketing, space optimization, and real-time availability tracking to enhance efficiency and user experience.',
+      'We deliver cutting-edge industrial security solutions, seamlessly integrating with SCADA systems to provide real-time threat detection, smart access control, and enhanced protection for your critical operations.',
   },
 
 ];
@@ -60,7 +60,7 @@ export function OperationAndMaintenanceSection() {
           <h2 className="text-center text-3xl font-bold sm:text-4xl md:text-5xl">
             Operation & Maintenance
           </h2>
-          <p className="text-muted-foreground text-lg">
+            <p className="text-muted-foreground text-lg text-justify leading-relaxed">
             The ability to integrate operations and maintenance constraints from
             the design stage is key to guaranteeing that the system is
             functional and maintained in line with budget forecasts throughout
@@ -68,7 +68,7 @@ export function OperationAndMaintenanceSection() {
             engineers who are specialized in operations and maintenance. SCL
             sometimes goes beyond its role of engineering and project management
             and operates and maintains the following systems infrastructures:
-          </p>
+            </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {operationsMaintenance.map((item, index) => (
               <div key={index} className="group perspective">
@@ -91,7 +91,7 @@ export function OperationAndMaintenanceSection() {
 
                   {/* Back Side */}
                   <div className="absolute inset-0 flex items-center justify-center bg-gray-900 text-white p-6 rounded-lg rotate-y-180 backface-hidden">
-                    <p className="text-center text-lg card__z">{item.description}</p>
+                    <p className="text-left text-md card__z">{item.description}</p>
                   </div>
                 </div>
               </div>
