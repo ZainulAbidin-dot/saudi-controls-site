@@ -67,7 +67,13 @@ const galleryData: ImageItem[] = [
     title: 'King Fahad Airbase - Taif',
     description: '',
   },
-
+  {
+    id: '13',
+    src: p13,
+    alt: 'Nature landscape',
+    title: 'Granada Center - Riyadh',
+    description: '',
+  },
   {
     id: '8',
     src: p8,
@@ -108,13 +114,6 @@ const galleryData: ImageItem[] = [
     src: p15,
     alt: 'Nature landscape',
     title: 'VMS Traffic System - Olaya Riyadh',
-    description: '',
-  },
-  {
-    id: '13',
-    src: p13,
-    alt: 'Nature landscape',
-    title: 'Granada Center - Riyadh',
     description: '',
   },
 ];
