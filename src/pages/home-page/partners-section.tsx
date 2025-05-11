@@ -98,7 +98,7 @@ export function PartnersSection() {
                   <div className="overflow-x-hidden">
                   <div className="animate-marquee-reverse whitespace-nowrap">
                     <div className="flex justify-center gap-4">
-                    {Array.from({ length: 3 }).flatMap(() =>
+                    {Array.from({ length: 4 }).flatMap(() =>
                       partners.map((partner, index) => (
                       <div
                         className="flex aspect-square size-34 items-stretch justify-stretch rounded-md border p-2 shadow"

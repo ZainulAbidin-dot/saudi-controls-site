@@ -36,13 +36,13 @@ const operationsMaintenance = [
     image: communications,
     title: 'Communication Systems',
     description:
-      'We execute modern communication systems, such as seamless connectivity, real-time data transmission between traffic system, and integrated network solutions, to improve efficiency and accuracy of Traffic system.',
+      'To enhance traffic system efficiency and accuracy, we deploy advanced communication technologies ensuring seamless connectivity, real-time data exchange, and fully integrated network solutions.',
   },
   {
     image: security,
     title: 'Security Systems',
     description:
-      'We deliver cutting-edge industrial security solutions, seamlessly integrating with SCADA systems to provide real-time threat detection, smart access control, and enhanced protection for your critical operations.',
+      'Our advanced industrial security solutions integrate seamlessly with SCADA systems, enabling real-time threat detection, intelligent access control, and robust protection for critical operations.',
   },
 
 ];
