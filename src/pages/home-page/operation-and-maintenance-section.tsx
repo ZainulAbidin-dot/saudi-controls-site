@@ -30,13 +30,13 @@ const operationsMaintenance = [
     image: iot,
     title: 'IoT and AI',
     description:
-      'We develop and deploy cutting-edge IoT solutions, enabling real-time data collection, intelligent automation, and seamless device integration to enhance operational efficiency and user experience.',
+      'We develop and deploy cutting-edge IoT solutions, enabling real-time data collection, intelligent automation, and smooth device integration to enhance operational efficiency and user experience.',
   },
   {
     image: communications,
     title: 'Communication Systems',
     description:
-      'To enhance traffic system efficiency and accuracy, we deploy advanced communication technologies ensuring seamless connectivity, real-time data exchange, and fully integrated network solutions.',
+      'To enhance communication systems efficiency and accuracy, we deploy advanced communication technologies ensuring seamless connectivity, real-time data exchange, and fully integrated network solutions.',
   },
   {
     image: security,
