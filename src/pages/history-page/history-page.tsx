@@ -419,11 +419,19 @@ const events = [
   },
   {
     title: '2024 - Ongoing',
-    cardTitle: 'King Abdullah International Airport – New Jazan Airport “Low Current and ICT systems”',
+    cardTitle:
+      'King Abdullah International Airport – New Jazan Airport “Low Current and ICT systems”',
     cardSubtitle: 'ICT systems for new airport',
     cardDetailedText:
       'SCL secured a project with King Abdullah International Airport to design, supply, install, and commission ICT Systems.',
-  }
+  },
+  {
+    title: '2024 - Ongoing',
+    cardTitle: 'Ceer – Riyadh Project for EV Charging Stations and Solutions',
+    cardSubtitle: 'EV Charging Stations and Solutions',
+    cardDetailedText:
+      'SCL secured a project with CEER to supply and implement EV Charging Stations and Solutions across Saudi Arabia.',
+  },
 ];
 
 export function HistoryPage() {
@@ -436,7 +444,7 @@ export function HistoryPage() {
 
       <div className="relative z-10 mx-auto max-w-7xl px-4">
         <h1 className="my-8 mt-30 text-center !text-3xl font-bold text-white md:!text-5xl">
-          Saudi Controls History
+          Saudi Controls Milestones
         </h1>
         <HistoryTimeline />
       </div>

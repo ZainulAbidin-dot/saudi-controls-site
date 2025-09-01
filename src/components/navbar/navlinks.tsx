@@ -26,7 +26,7 @@ const navLinks = [
     icon: MailIcon,
   },
   {
-    title: 'History',
+    title: 'Milestones',
     href: '/history',
     icon: ClockIcon,
   },
@@ -42,25 +42,25 @@ export function DesktopNavLinks() {
     <ul className="flex items-center gap-4">
       {navLinks.map((link) => (
         <li key={link.href}>
-            <Link
-              to={link.href}
-              className={cn(
+          <Link
+            to={link.href}
+            className={cn(
               'flex items-center gap-1',
-              'relative group',
+              'group relative',
               '!text-white',
               'text-lg',
-              'transition-transform duration-300 transform hover:translate-x-2'
-              )}
-              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            >
-              <span>{link.title}</span>
-              <span
+              'transform transition-transform duration-300 hover:translate-x-2'
+            )}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            <span>{link.title}</span>
+            <span
               className={cn(
                 'absolute bottom-0 left-0 h-[2px] w-0 bg-white',
                 'transition-all duration-300 group-hover:w-full'
               )}
-              ></span>
-            </Link>
+            ></span>
+          </Link>
         </li>
       ))}
     </ul>
