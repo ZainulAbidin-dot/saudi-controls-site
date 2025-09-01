@@ -418,6 +418,13 @@ const events = [
       'SCL secured a project to design, supply, install Detection Devices.',
   },
   {
+    title: '2024',
+    cardTitle: 'Boulevard Sports – Infrastructure project',
+    cardSubtitle: 'Traffic Control System',
+    cardDetailedText:
+      'SCL secured a project to design, supply, install an Advanced Traffic Control System for Boulevard Sports in Diriyah, Wadi Labn and more places.',
+  },
+  {
     title: '2024 - Ongoing',
     cardTitle:
       'King Abdullah International Airport – New Jazan Airport “Low Current and ICT systems”',
