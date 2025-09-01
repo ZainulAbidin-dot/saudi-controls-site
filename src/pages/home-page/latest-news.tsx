@@ -44,7 +44,8 @@ export function LatestNewsSection() {
               </p>
               <p className="text-muted-foreground mt-4 text-justify text-lg leading-relaxed">
                 Saudi Controls is in active discussions to expand its portfolio
-                of EV charging solutions furthering the Kingdom’s commitment to
+                of EV charging solutions such as wall-mounted stations, DC
+                chargers and Robotics furthering the Kingdom’s commitment to
                 sustainable electric mobility.
               </p>
             </div>
