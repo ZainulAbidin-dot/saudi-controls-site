@@ -6,7 +6,7 @@ import { i as AnimatePresence } from "../_libs/framer-motion.mjs";
 import { t as motion } from "../_libs/motion.mjs";
 import { n as company, r as data_default, t as aboutData } from "./routes-BpdpevyR.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-MqQI_mrs.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-CloDLl_I.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var styles_default = "/assets/styles-DbwEhxRP.css";
@@ -340,7 +340,7 @@ var Route$1 = createFileRoute("/about")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./routes-DNfFNGzV.mjs");
+var $$splitComponentImporter = () => import("./routes-CDSwWlY0.mjs");
 data_default.latest_news;
 var Route = createFileRoute("/")({
 	head: () => ({ meta: [{ title: `${company.name} — ${company.tagline}` }, {

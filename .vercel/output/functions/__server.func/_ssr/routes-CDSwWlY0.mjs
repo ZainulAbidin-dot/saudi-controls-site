@@ -12,7 +12,7 @@ import { t as svc_bms_2_default } from "./svc-bms-2-DVniynm9.mjs";
 import { n as company, r as data_default, t as aboutData } from "./routes-BpdpevyR.mjs";
 import { t as svc_traffic_default } from "./svc-traffic-D-qfbC3_.mjs";
 import { t as useEmblaCarousel } from "../_libs/embla-carousel-react+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-DNfFNGzV.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-CDSwWlY0.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var svc_ev_2_default = "/assets/svc-ev-2-BsPBCTZ9.jpeg";
@@ -204,7 +204,13 @@ function Hero() {
 								delay: .6
 							},
 							className: "mt-10 flex flex-wrap items-center gap-3",
-							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PrimaryButton, { children: "Talk to Sales" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GhostButton, { children: "View Solutions" })]
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+								href: "#contact",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(PrimaryButton, { children: "Talk to Sales" })
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+								to: "/solutions",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(GhostButton, { children: "View Solutions" })
+							})]
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 							...fadeUp,

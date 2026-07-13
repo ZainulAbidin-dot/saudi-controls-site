@@ -220,8 +220,12 @@ function Hero() {
             transition={{ ...fadeUp.transition, delay: 0.6 }}
             className="mt-10 flex flex-wrap items-center gap-3"
           >
-            <PrimaryButton>Talk to Sales</PrimaryButton>
-            <GhostButton>View Solutions</GhostButton>
+            <a href="#contact">
+              <PrimaryButton>Talk to Sales</PrimaryButton>
+            </a>
+            <Link to="/solutions">
+              <GhostButton>View Solutions</GhostButton>
+            </Link>
           </motion.div>
 
           {/* values strip */}
