@@ -25,7 +25,7 @@ import svcEv from "@/assets/svc-ev.jpg";
 import svcEv2 from "@/assets/svc-ev-2.jpeg";
 import svcBms from "@/assets/svc-bms.jpg";
 import svcBms2 from "@/assets/svc-bms-2.jpeg";
-import svcTraffic from "@/assets/svc-traffic.jpg";
+import svcTraffic from "@/assets/svc-traffic.jpeg";
 import svcTraffic2 from "@/assets/svc-traffic-2.jpeg";
 import svcIot from "@/assets/svc-iot.jpg";
 import svcIot3 from "@/assets/svc-iot-3.jpg";

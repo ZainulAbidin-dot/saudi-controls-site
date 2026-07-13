@@ -15,7 +15,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 
-import svcTraffic from "@/assets/svc-traffic.jpg";
+import svcTraffic from "@/assets/svc-traffic.jpeg";
 import svcBms from "@/assets/svc-bms.jpg";
 import svcIot from "@/assets/svc-iot.jpg";
 import svcSecurity from "@/assets/svc-security.jpg";
@@ -164,7 +164,6 @@ const solutions: Solution[] = [
   },
 ];
 
-
 function Hero() {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
@@ -173,10 +172,7 @@ function Hero() {
   const yCopy = useTransform(scrollYProgress, [0, 1], [0, 80]);
 
   return (
-    <section
-      ref={ref}
-      className="relative isolate overflow-hidden pt-40 pb-28 md:pt-52 md:pb-36"
-    >
+    <section ref={ref} className="relative isolate overflow-hidden pt-40 pb-28 md:pt-52 md:pb-36">
       <motion.div
         style={{ y: yOrb1 }}
         className="pointer-events-none absolute -top-32 -left-32 h-[28rem] w-[28rem] rounded-full bg-radial-mint opacity-70 blur-2xl"
@@ -216,8 +212,8 @@ function Hero() {
           transition={{ ...fadeUp.transition, delay: 0.25 }}
           className="mt-8 max-w-2xl text-lg text-foreground/65 leading-relaxed"
         >
-          Six practice areas. One disciplined engineering approach. We design,
-          integrate and operate the control systems that quietly run modern cities.
+          Six practice areas. One disciplined engineering approach. We design, integrate and operate
+          the control systems that quietly run modern cities.
         </motion.p>
 
         <motion.div
@@ -253,11 +249,7 @@ function SolutionBlock({ s, i }: { s: Solution; i: number }) {
   const reverse = i % 2 === 1;
 
   return (
-    <section
-      id={s.id}
-      ref={ref}
-      className="relative border-t border-foreground/10 py-24 md:py-36"
-    >
+    <section id={s.id} ref={ref} className="relative border-t border-foreground/10 py-24 md:py-36">
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-14 px-6 lg:grid-cols-12">
         {/* copy */}
         <div className={`lg:col-span-5 ${reverse ? "lg:order-2" : ""}`}>
@@ -310,8 +302,8 @@ function SolutionBlock({ s, i }: { s: Solution; i: number }) {
             transition={{ ...fadeUp.transition, delay: 0.4 }}
             className="mt-10 border-l-2 border-accent/50 pl-5 font-display text-lg italic text-foreground/75"
           >
-            “Our commitment to excellence and innovation drives us to deliver the
-            best outcomes for our clients.”
+            “Our commitment to excellence and innovation drives us to deliver the best outcomes for
+            our clients.”
           </motion.blockquote>
         </div>
 
@@ -353,9 +345,7 @@ function SolutionBlock({ s, i }: { s: Solution; i: number }) {
               transition={{ duration: 0.9, delay: 0.35, ease: EASE }}
               className="col-span-2 rounded-3xl border border-foreground/10 bg-secondary/50 p-5 backdrop-blur"
             >
-              <div className="text-xs uppercase tracking-[0.18em] text-foreground/50">
-                Outcome
-              </div>
+              <div className="text-xs uppercase tracking-[0.18em] text-foreground/50">Outcome</div>
               <div className="mt-2 font-display text-3xl italic">
                 {["+38%", "−42%", "24/7", "99%", "50+", "15+"][i]}
               </div>
