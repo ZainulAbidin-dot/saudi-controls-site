@@ -1,1 +1,0 @@
-import{l as e}from"./SiteFooter-CIN6AtyN.js";var t=e(`circle-check`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`m9 12 2 2 4-4`,key:`dzmm74`}]]),n=`/assets/svc-bms-C9SIMlb4.jpg`;export{t as n,n as t};
