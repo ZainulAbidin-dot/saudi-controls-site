@@ -1,0 +1,1 @@
+var e=`/assets/about-team-Y0BHFwRJ.jpg`;export{e as t};
