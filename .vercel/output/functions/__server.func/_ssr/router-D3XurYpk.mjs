@@ -6,7 +6,7 @@ import { i as AnimatePresence } from "../_libs/framer-motion.mjs";
 import { t as motion } from "../_libs/motion.mjs";
 import { n as company, r as data_default, t as aboutData } from "./routes-BpdpevyR.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-BeefZsgy.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-D3XurYpk.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var styles_default = "/assets/styles-DbwEhxRP.css";
@@ -287,7 +287,7 @@ function RootComponent() {
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageTransition, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollToTop, {})]
 	});
 }
-var $$splitComponentImporter$3 = () => import("./solutions-CvQMDI_7.mjs");
+var $$splitComponentImporter$3 = () => import("./solutions-C9YhLBjr.mjs");
 var Route$3 = createFileRoute("/solutions")({
 	head: () => ({ meta: [
 		{ title: "Solutions —  Saudi Controls" },
@@ -306,7 +306,7 @@ var Route$3 = createFileRoute("/solutions")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("./projects-rV2D8Ycc.mjs");
+var $$splitComponentImporter$2 = () => import("./projects-BRbv8kB8.mjs");
 var Route$2 = createFileRoute("/projects")({
 	head: () => ({ meta: [
 		{ title: "Projects — Saudi Controls" },
@@ -340,7 +340,7 @@ var Route$1 = createFileRoute("/about")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./routes-BleJRtWR.mjs");
+var $$splitComponentImporter = () => import("./routes-Q-tYY_Qk.mjs");
 data_default.latest_news;
 var Route = createFileRoute("/")({
 	head: () => ({ meta: [{ title: `${company.name} — ${company.tagline}` }, {

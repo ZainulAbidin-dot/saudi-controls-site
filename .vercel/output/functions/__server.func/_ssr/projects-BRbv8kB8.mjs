@@ -5,10 +5,10 @@ import { C as Building2, D as ArrowLeft, O as Sparkles, T as ArrowUpRight, _ as 
 import { n as SiteNav, t as SiteFooter } from "./SiteFooter-CLv72zoe.mjs";
 import { n as useScroll, t as useTransform } from "../_libs/framer-motion.mjs";
 import { t as motion } from "../_libs/motion.mjs";
+import { t as svc_ev_default } from "./svc-ev-BrRBicNa.mjs";
 import { t as svc_bms_2_default } from "./svc-bms-2-DVniynm9.mjs";
-import { t as svc_security_default } from "./svc-security-DewivQok.mjs";
-import { t as svc_ev_default } from "./svc-ev-yToCoQ24.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/projects-rV2D8Ycc.js
+import { t as svc_security_3_default } from "./svc-security-3-CvnVouFC.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/projects-BRbv8kB8.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var EASE = [
@@ -431,23 +431,23 @@ function Featured() {
 	const featured = [
 		{
 			year: "2024",
-			title: "EV Charging Stations",
+			title: "Electric Vehicle Charging Stations",
 			desc: "A comprehensive network of electric vehicle charging stations.",
 			img: svc_ev_default,
 			tag: "Mobility"
 		},
 		{
 			year: "2024",
-			title: "Jizan Airport BMS",
+			title: "Jizan Airport Building Management & Security",
 			desc: "End-to-end low-current solution for a new regional aviation hub.",
 			img: svc_bms_2_default,
 			tag: "Aviation"
 		},
 		{
 			year: "2023",
-			title: "RCRC Security & Atmosphere",
+			title: "RCRC Security & Monitoring Systems",
 			desc: "Perimeter intrusion, gate access and atmosphere detection across a major air base.",
-			img: svc_security_default,
+			img: svc_security_3_default,
 			tag: "Defense"
 		}
 	];

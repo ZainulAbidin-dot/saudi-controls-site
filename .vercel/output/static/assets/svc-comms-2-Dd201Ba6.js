@@ -1,0 +1,1 @@
+import{i as e}from"./index-D0QqjO9I.js";var t=e(`circle-check`,[[`circle`,{cx:`12`,cy:`12`,r:`10`,key:`1mglay`}],[`path`,{d:`m9 12 2 2 4-4`,key:`dzmm74`}]]),n=`/assets/svc-bms-C9SIMlb4.jpg`,r=`/assets/svc-comms-2-B_h52KQ4.jpeg`;export{n,t as r,r as t};

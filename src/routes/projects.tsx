@@ -16,8 +16,8 @@ import {
 } from "lucide-react";
 
 import heroImg from "@/assets/svc-bms-2.jpeg";
-import imgEv from "@/assets/svc-ev.jpg";
-import imgSec from "@/assets/svc-security.jpg";
+import imgEv from "@/assets/svc-ev.jpeg";
+import imgSec from "@/assets/svc-security-3.png";
 import imgIot from "@/assets/svc-iot.jpg";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
@@ -409,21 +409,21 @@ function Featured() {
   const featured = [
     {
       year: "2024",
-      title: "EV Charging Stations",
+      title: "Electric Vehicle Charging Stations",
       desc: "A comprehensive network of electric vehicle charging stations.",
       img: imgEv,
       tag: "Mobility",
     },
     {
       year: "2024",
-      title: "Jizan Airport BMS",
+      title: "Jizan Airport Building Management & Security",
       desc: "End-to-end low-current solution for a new regional aviation hub.",
       img: svcbms2,
       tag: "Aviation",
     },
     {
       year: "2023",
-      title: "RCRC Security & Atmosphere",
+      title: "RCRC Security & Monitoring Systems",
       desc: "Perimeter intrusion, gate access and atmosphere detection across a major air base.",
       img: imgSec,
       tag: "Defense",
