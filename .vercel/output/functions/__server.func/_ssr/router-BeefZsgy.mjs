@@ -6,7 +6,7 @@ import { i as AnimatePresence } from "../_libs/framer-motion.mjs";
 import { t as motion } from "../_libs/motion.mjs";
 import { n as company, r as data_default, t as aboutData } from "./routes-BpdpevyR.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-W_HJG2i3.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-BeefZsgy.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var styles_default = "/assets/styles-DbwEhxRP.css";
@@ -26,7 +26,7 @@ function PageTransition({ children }) {
 	const pathname = useRouterState({ select: (s) => s.location.pathname });
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(AnimatePresence, {
 		mode: "wait",
-		initial: false,
+		initial: true,
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 			initial: {
 				opacity: 0,

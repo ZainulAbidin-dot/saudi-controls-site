@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-C0CnQyfo.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-IRvrk85F.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "C:/Users/Zain/Desktop/Company Site/React-site/company-site/src/routes/__root.tsx",
@@ -8,23 +8,23 @@ var tsrStartManifest = () => ({ routes: {
 			"/projects",
 			"/solutions"
 		],
-		preloads: ["/assets/index-CpmbW6ND.js"],
+		preloads: ["/assets/index-B2xfMaND.js"],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-CpmbW6ND.js"
+			src: "/assets/index-B2xfMaND.js"
 		} }]
 	},
 	"/": {
 		filePath: "C:/Users/Zain/Desktop/Company Site/React-site/company-site/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-HZvTCuct.js",
-			"/assets/SiteFooter-DgpG5krQ.js",
-			"/assets/svc-comms-2-D-6kOAeu.js",
-			"/assets/svc-security-BSruTkaC.js",
-			"/assets/svc-bms-2-C1gzM4Jb.js",
-			"/assets/svc-iot-CvEMTnwD.js",
+			"/assets/routes-DCEBwvK2.js",
+			"/assets/SiteFooter-MuTBcGUq.js",
+			"/assets/svc-comms-2-B0Wa0Dew.js",
+			"/assets/svc-security-DuzNLwDP.js",
+			"/assets/svc-bms-2-1vagQwmN.js",
+			"/assets/svc-iot-YvJBBEJj.js",
 			"/assets/svc-iot-3-DeQbGMIC.js"
 		]
 	},
@@ -32,9 +32,9 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/Zain/Desktop/Company Site/React-site/company-site/src/routes/about.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/about-dU-ywM9l.js",
-			"/assets/SiteFooter-DgpG5krQ.js",
-			"/assets/svc-comms-2-D-6kOAeu.js",
+			"/assets/about-CzvL49ji.js",
+			"/assets/SiteFooter-MuTBcGUq.js",
+			"/assets/svc-comms-2-B0Wa0Dew.js",
 			"/assets/svc-iot-3-DeQbGMIC.js"
 		]
 	},
@@ -42,23 +42,23 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "C:/Users/Zain/Desktop/Company Site/React-site/company-site/src/routes/projects.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/projects-BiMCYb-U.js",
-			"/assets/SiteFooter-DgpG5krQ.js",
-			"/assets/svc-security-BSruTkaC.js",
-			"/assets/svc-bms-2-C1gzM4Jb.js",
-			"/assets/svc-ev-CpS5kRDP.js"
+			"/assets/projects-2vI5SIR7.js",
+			"/assets/SiteFooter-MuTBcGUq.js",
+			"/assets/svc-security-DuzNLwDP.js",
+			"/assets/svc-bms-2-1vagQwmN.js",
+			"/assets/svc-ev-BQDOEj8y.js"
 		]
 	},
 	"/solutions": {
 		filePath: "C:/Users/Zain/Desktop/Company Site/React-site/company-site/src/routes/solutions.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/solutions-C43OG2sx.js",
-			"/assets/SiteFooter-DgpG5krQ.js",
-			"/assets/svc-comms-2-D-6kOAeu.js",
-			"/assets/svc-security-BSruTkaC.js",
-			"/assets/svc-ev-CpS5kRDP.js",
-			"/assets/svc-iot-CvEMTnwD.js"
+			"/assets/solutions-Ct3oVz0h.js",
+			"/assets/SiteFooter-MuTBcGUq.js",
+			"/assets/svc-comms-2-B0Wa0Dew.js",
+			"/assets/svc-security-DuzNLwDP.js",
+			"/assets/svc-ev-BQDOEj8y.js",
+			"/assets/svc-iot-YvJBBEJj.js"
 		]
 	}
 } });
