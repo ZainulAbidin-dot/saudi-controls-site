@@ -5,7 +5,7 @@ type Col = {
   h: string;
   links: {
     label: string;
-    to?: "/" | "/about" | "/solutions" | "/projects";
+    to?: string;
     hash?: string;
     href?: string;
   }[];
@@ -24,10 +24,10 @@ const columns: Col[] = [
   {
     h: "Practices",
     links: [
-      { label: "Intelligent Transport", to: "/solutions" },
-      { label: "Building Management", to: "/solutions" },
-      { label: "Security Systems", to: "/solutions" },
-      { label: "IoT & AI", to: "/solutions" },
+      { label: "Intelligent Transport", to: "/solutions#its" },
+      { label: "Building Management", to: "/solutions#bie" },
+      { label: "Security Systems", to: "/solutions#fire" },
+      { label: "IoT & AI", to: "/solutions#iot" },
     ],
   },
   {
