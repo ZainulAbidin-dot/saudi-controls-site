@@ -21,18 +21,18 @@ import {
 
 import heroPortrait from "@/assets/company.jpg";
 import aboutTeam from "@/assets/about-team.jpg";
-import svcEv from "@/assets/svc-ev.jpg";
+import svcEv from "@/assets/svc-ev.jpeg";
 import svcEv2 from "@/assets/svc-ev-2.jpeg";
 import svcBms from "@/assets/svc-bms.jpg";
 import svcBms2 from "@/assets/svc-bms-2.jpeg";
 import svcTraffic from "@/assets/svc-traffic.jpeg";
 import svcTraffic2 from "@/assets/svc-traffic-2.jpeg";
 import svcIot from "@/assets/svc-iot.jpg";
-import svcIot3 from "@/assets/svc-iot-3.jpg";
-import svcComms from "@/assets/svc-comms.jpg";
+import svcIot3 from "@/assets/svc-iot-3.jpeg";
+import svcComms from "@/assets/svc-comms-4.png";
 import svcSecurity from "@/assets/svc-security.jpg";
-import svcSecurity2 from "@/assets/svc-security-2.png";
-import svcSecurity3 from "@/assets/svc-security-3.png";
+import svcSecurity2 from "@/assets/svc-comms-2.jpeg";
+import svcSecurity3 from "@/assets/svc-security-3.jpeg";
 import avatar1 from "@/assets/clients/ZDEnergy.png";
 import avatar3 from "@/assets/clients/Flir.jpg";
 import avatar4 from "@/assets/clients/HikVision.jpg";
@@ -432,13 +432,13 @@ function About() {
 /* services */
 const services = [
   {
-    title: "Transportation Systems",
+    title: "Intelligent Transportation Systems",
     desc: "Smart transport solutions enabling smooth mobility with intelligent traffic integration.",
     img: svcTraffic,
     icon: TrafficCone,
   },
   {
-    title: "Building Management",
+    title: "Building Management System",
     desc: "Smart-building stacks optimising energy, security and real-time operational efficiency.",
     img: svcBms,
     icon: Building2,

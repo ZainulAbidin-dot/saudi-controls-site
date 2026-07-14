@@ -16,24 +16,30 @@ import {
 } from "lucide-react";
 
 import svcTraffic from "@/assets/svc-traffic.jpeg";
+import svcTraffic2 from "@/assets/svc-traffic-3.jpeg";
 import svcBms from "@/assets/svc-bms.jpg";
+import svcBms2 from "@/assets/svc-bms-3.jpeg";
 import svcIot from "@/assets/svc-iot.jpg";
 import svcSecurity from "@/assets/svc-security.jpg";
-import svcComms from "@/assets/svc-comms.jpg";
-import svcEv from "@/assets/svc-ev.jpg";
+import svcSecurity2 from "@/assets/svc-security-3.png";
+import svcComms from "@/assets/svc-comms-3.jpeg";
+import svcEv2 from "@/assets/svc-ev.jpg";
+import svcEv from "@/assets/svc-ev.jpeg";
+import svcScada from "@/assets/svc-comms-2.jpeg";
+import svcScada2 from "@/assets/svc-scada.jpeg";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 
 export const Route = createFileRoute("/solutions")({
   head: () => ({
     meta: [
-      { title: "Solutions — Meridian Engineering" },
+      { title: "Solutions —  Saudi Controls" },
       {
         name: "description",
         content:
           "Bespoke technological solutions across intelligent transport, smart buildings, centralized fire monitoring and SCADA water management.",
       },
-      { property: "og:title", content: "Solutions — Meridian Engineering" },
+      { property: "og:title", content: "Solutions — Saudi Controls" },
       {
         property: "og:description",
         content:
@@ -80,7 +86,7 @@ const solutions: Solution[] = [
       "EV charging infrastructure integrated with smart grids",
     ],
     primary: svcTraffic,
-    secondary: svcComms,
+    secondary: svcTraffic2,
   },
   {
     id: "bie",
@@ -96,7 +102,7 @@ const solutions: Solution[] = [
       "Legacy modernization through AI-driven retrofits",
     ],
     primary: svcBms,
-    secondary: svcIot,
+    secondary: svcBms2,
   },
   {
     id: "fire",
@@ -111,7 +117,7 @@ const solutions: Solution[] = [
       "AI-driven incident prioritization for rapid response",
       "Scalable for residential complexes, industrial zones and city grids",
     ],
-    primary: svcSecurity,
+    primary: svcSecurity2,
     secondary: svcComms,
   },
   {
@@ -127,8 +133,8 @@ const solutions: Solution[] = [
       "Meet stringent water quality and sustainability regulations",
       "Open architecture that scales from district to national grid",
     ],
-    primary: svcEv,
-    secondary: svcIot,
+    primary: svcScada,
+    secondary: svcScada2,
   },
   {
     id: "ev",
@@ -144,7 +150,7 @@ const solutions: Solution[] = [
       "Payment, telemetry and remote diagnostics on one platform",
     ],
     primary: svcEv,
-    secondary: svcComms,
+    secondary: svcEv2,
   },
   {
     id: "security",
@@ -190,7 +196,7 @@ function Hero() {
             className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-foreground/60 hover:text-foreground transition-colors"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
-            Back to Meridian
+            Back to Home
           </Link>
         </motion.div>
 

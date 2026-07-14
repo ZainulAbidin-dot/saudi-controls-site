@@ -26,13 +26,13 @@ import svcbms2 from "@/assets/svc-bms-2.jpeg";
 export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
-      { title: "Projects — Meridian Engineering" },
+      { title: "Projects — Saudi Controls" },
       {
         name: "description",
         content:
           "Three decades of mission-critical control, automation and intelligent infrastructure projects delivered across the Kingdom.",
       },
-      { property: "og:title", content: "Projects — Meridian Engineering" },
+      { property: "og:title", content: "Projects — Saudi Controls" },
     ],
   }),
   component: ProjectsPage,
@@ -278,7 +278,7 @@ const milestones: Milestone[] = [
   },
   {
     year: "1997",
-    title: "Meridian Founded",
+    title: "Saudi Controls Founded",
     subtitle: "Engineering company established",
     body: "Founded with a singular focus: bringing world-class building and industrial controls expertise to the Kingdom's most ambitious programs.",
     category: "Industrial",
@@ -330,7 +330,7 @@ function Hero() {
             className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-foreground/60 hover:text-foreground transition-colors"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
-            Back to Meridian
+            Back to Home
           </Link>
         </motion.div>
 
@@ -352,8 +352,8 @@ function Hero() {
           className="mt-8 max-w-2xl text-lg text-foreground/65 leading-relaxed"
         >
           From the first smart ministry building to nationwide mobility, aviation and defense
-          programs — every milestone in the Meridian archive is a system still running, every day,
-          somewhere in the Kingdom.
+          programs — every milestone in the Saudi Controls archive is a system still running, every
+          day, somewhere in the Kingdom.
         </motion.p>
 
         <motion.div
@@ -386,7 +386,7 @@ function Hero() {
         >
           <img
             src={heroImg}
-            alt="Mission control hub for Meridian projects"
+            alt="Mission control hub for Saudi Controls projects"
             className="h-[26rem] w-full object-cover transition-transform duration-[1300ms] ease-out hover:scale-[1.03] md:h-[34rem]"
           />
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-slate-950/70 via-slate-950/15 to-transparent" />
@@ -395,8 +395,8 @@ function Hero() {
               Project spotlight
             </div>
             <p className="mt-3 text-sm leading-relaxed text-white/80">
-              A force-multiplier for Meridian's intelligent infrastructure, mobility, and security
-              programs.
+              A force-multiplier for Saudi Controls' intelligent infrastructure, mobility, and
+              security programs.
             </p>
           </div>
         </motion.div>
@@ -704,7 +704,7 @@ function CTA() {
               hash="contact"
               className="group inline-flex items-center gap-2 rounded-full bg-background px-5 py-3 text-sm font-medium text-foreground transition-all hover:-translate-y-0.5 hover:shadow-lift"
             >
-              Contact Meridian
+              Contact Saudi Controls
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:rotate-45" />
             </Link>
             <Link

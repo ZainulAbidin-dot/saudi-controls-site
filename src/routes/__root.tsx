@@ -80,20 +80,43 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Saudi Controls" },
-      { name: "description", content: "Meridian designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities." },
+      {
+        name: "description",
+        content:
+          "Saudi Controls designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
+      },
       { property: "og:title", content: "Saudi Controls" },
-      { property: "og:description", content: "Meridian designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities." },
+      {
+        property: "og:description",
+        content:
+          "Saudi Controls designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Saudi Controls" },
-      { name: "twitter:description", content: "Meridian designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6657f9cc-5e89-43ed-89a0-b54d74bdea31/id-preview-0a4b1891--0ed63f24-8992-4fa1-92a8-bd89a96326c8.lovable.app-1781969074834.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6657f9cc-5e89-43ed-89a0-b54d74bdea31/id-preview-0a4b1891--0ed63f24-8992-4fa1-92a8-bd89a96326c8.lovable.app-1781969074834.png" },
+      {
+        name: "twitter:description",
+        content:
+          "Saudi Controls designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6657f9cc-5e89-43ed-89a0-b54d74bdea31/id-preview-0a4b1891--0ed63f24-8992-4fa1-92a8-bd89a96326c8.lovable.app-1781969074834.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6657f9cc-5e89-43ed-89a0-b54d74bdea31/id-preview-0a4b1891--0ed63f24-8992-4fa1-92a8-bd89a96326c8.lovable.app-1781969074834.png",
+      },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap",
+      },
       { rel: "stylesheet", href: appCss },
     ],
   }),

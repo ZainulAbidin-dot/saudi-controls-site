@@ -17,22 +17,22 @@ import {
 import founder from "@/assets/company.jpg";
 import promise from "@/assets/about-promise.jpeg";
 import team from "@/assets/about-team.jpg";
-import svcIot from "@/assets/svc-iot.jpg";
+import svcIot from "@/assets/svc-iot-3.jpeg";
 import svcBms from "@/assets/svc-bms.jpg";
-import svcComms from "@/assets/svc-comms.jpg";
+import svcComms from "@/assets/svc-comms-2.jpeg";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Meridian Engineering" },
+      { title: "About — Saudi Controls " },
       {
         name: "description",
         content:
-          "Rooted in heritage, engineered for the future. Meridian architects future-ready control ecosystems where innovation meets reliability.",
+          "Rooted in heritage, engineered for the future. Saudi Controls architects future-ready control ecosystems where innovation meets reliability.",
       },
-      { property: "og:title", content: "About — Meridian Engineering" },
+      { property: "og:title", content: "About — Saudi Controls " },
       {
         property: "og:description",
         content:
@@ -77,14 +77,14 @@ function Hero() {
             className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.22em] text-foreground/60 hover:text-foreground transition-colors"
           >
             <ArrowLeft className="h-3.5 w-3.5" />
-            Back to Meridian
+            Back to Home
           </Link>
         </motion.div>
 
         <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.1 }} className="mt-6">
           <span className="inline-flex items-center gap-1.5 rounded-full border border-foreground/10 bg-white/60 px-3.5 py-1.5 text-xs font-medium text-foreground/70 backdrop-blur">
             <Sparkles className="h-3.5 w-3.5" />
-            About Meridian
+            About Saudi Controls
           </span>
         </motion.div>
 
@@ -159,9 +159,9 @@ function Story() {
             transition={{ ...fadeUp.transition, delay: 0.15 }}
             className="mt-6 text-base leading-relaxed text-foreground/65 md:text-lg"
           >
-            Meridian was founded on a simple conviction: the control systems quietly running modern
-            cities deserve the same rigor as the architecture above them. Our values are rooted in
-            heritage and sharpened by an obsession with what comes next.
+            Saudi Controls was founded on a simple conviction: the control systems quietly running
+            modern cities deserve the same rigor as the architecture above them. Our values are
+            rooted in heritage and sharpened by an obsession with what comes next.
           </motion.p>
 
           <motion.p
@@ -398,22 +398,22 @@ function Pillars() {
 
 const milestones = [
   {
-    y: "2013",
+    y: "1997",
     t: "Founded",
     c: "Established with a single mandate: rigorous, vendor-neutral controls engineering.",
   },
   {
-    y: "2016",
+    y: "2006",
     t: "First city-scale ITS",
     c: "Delivered adaptive signal control across a metropolitan corridor.",
   },
   {
-    y: "2019",
+    y: "2005",
     t: "Centralized fire monitoring",
     c: "Launched 24/7 multi-site monitoring platform with AI prioritization.",
   },
   {
-    y: "2022",
+    y: "2007",
     t: "SCADA water practice",
     c: "Opened dedicated utility-grade SCADA practice for national water networks.",
   },
@@ -492,7 +492,7 @@ function Pull() {
           transition={{ ...fadeUp.transition, delay: 0.15 }}
           className="mt-8 text-xs uppercase tracking-[0.22em] text-foreground/55"
         >
-          The Meridian Promise
+          The Saudi Controls Promise
         </motion.div>
       </div>
     </section>
