@@ -4,7 +4,7 @@ import { n as svc_comms_2_default, t as svc_bms_default } from "./svc-comms-2-J3
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { C as Building2, D as ArrowLeft, E as ArrowRight, O as Sparkles, T as ArrowUpRight, a as TrafficCone, c as Shield, i as TrendingUp, k as CircleCheck, p as Phone, s as Star, t as Zap, u as Radio, x as Cpu } from "../_libs/lucide-react.mjs";
-import { n as SiteNav, t as SiteFooter } from "./SiteFooter-CjFqJpWJ.mjs";
+import { n as SiteNav, t as SiteFooter } from "./SiteFooter-CLv72zoe.mjs";
 import { n as useScroll, t as useTransform } from "../_libs/framer-motion.mjs";
 import { t as motion } from "../_libs/motion.mjs";
 import { t as svc_bms_2_default } from "./svc-bms-2-DVniynm9.mjs";
@@ -12,7 +12,7 @@ import { t as svc_security_default } from "./svc-security-DewivQok.mjs";
 import { n as company, r as data_default, t as aboutData } from "./routes-BpdpevyR.mjs";
 import { n as svc_iot_default, r as svc_traffic_default, t as svc_ev_default } from "./svc-iot-gl-GTGYN.mjs";
 import { t as useEmblaCarousel } from "../_libs/embla-carousel-react+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-CLG_z6Bf.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-BleJRtWR.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var svc_ev_2_default = "/assets/svc-ev-2-BVr0ihjR.jpeg";

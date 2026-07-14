@@ -2,7 +2,7 @@ import { o as __toESM } from "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { m as Menu, n as X, p as Phone } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/SiteFooter-CjFqJpWJ.js
+//#region node_modules/.nitro/vite/services/ssr/assets/SiteFooter-CLv72zoe.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var logo_default = "/assets/logo-DWoTB44g.png";
@@ -143,19 +143,19 @@ var columns = [
 		links: [
 			{
 				label: "Intelligent Transport",
-				to: "/solutions"
+				to: "/solutions#its"
 			},
 			{
 				label: "Building Management",
-				to: "/solutions"
+				to: "/solutions#bie"
 			},
 			{
 				label: "Security Systems",
-				to: "/solutions"
+				to: "/solutions#fire"
 			},
 			{
 				label: "IoT & AI",
-				to: "/solutions"
+				to: "/solutions#iot"
 			}
 		]
 	},
