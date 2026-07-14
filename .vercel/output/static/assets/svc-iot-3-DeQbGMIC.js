@@ -1,0 +1,1 @@
+var e=`/assets/company-A7nz7WXn.jpg`,t=`/assets/about-team-Y0BHFwRJ.jpg`,n=`/assets/svc-iot-3-CgR6qFvZ.jpeg`;export{t as n,e as r,n as t};
