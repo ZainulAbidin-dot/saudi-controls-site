@@ -1,11 +1,11 @@
 import { o as __toESM } from "../_runtime.mjs";
+import { t as logo_default } from "./logo-Dp6Mx8tO.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { m as Menu, n as X, p as Phone } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/SiteFooter-CLv72zoe.js
+//#region node_modules/.nitro/vite/services/ssr/assets/SiteFooter-TplmrFcN.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var logo_default = "/assets/logo-DWoTB44g.png";
 var navLinks = [
 	{
 		to: "/",

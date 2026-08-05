@@ -4,10 +4,10 @@ import { n as svc_comms_2_default, t as svc_bms_default } from "./svc-comms-2-J3
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { D as ArrowLeft, O as Sparkles, S as Compass, T as ArrowUpRight, d as Quote, g as HeartHandshake, k as CircleCheck, o as Target, y as Eye } from "../_libs/lucide-react.mjs";
-import { n as SiteNav, t as SiteFooter } from "./SiteFooter-CLv72zoe.mjs";
+import { n as SiteNav, t as SiteFooter } from "./SiteFooter-TplmrFcN.mjs";
 import { n as useScroll, t as useTransform } from "../_libs/framer-motion.mjs";
 import { t as motion } from "../_libs/motion.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-CAd-ZUwK.js
+//#region node_modules/.nitro/vite/services/ssr/assets/about-DssyN7CF.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var about_promise_default = "/assets/about-promise-BUYlwgtF.jpeg";

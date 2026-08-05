@@ -1,4 +1,5 @@
 import { o as __toESM } from "../_runtime.mjs";
+import { t as logo_default } from "./logo-Dp6Mx8tO.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { N as useRouter, c as HeadContent, d as createRouter, f as Outlet, g as Link, h as createRootRouteWithContext, l as useRouterState, m as createFileRoute, p as lazyRouteComponent, s as Scripts } from "../_libs/@tanstack/react-router+[...].mjs";
 import { w as ArrowUp } from "../_libs/lucide-react.mjs";
@@ -6,10 +7,10 @@ import { i as AnimatePresence } from "../_libs/framer-motion.mjs";
 import { t as motion } from "../_libs/motion.mjs";
 import { n as company, r as data_default, t as aboutData } from "./routes-BpdpevyR.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-D3XurYpk.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-Ce5yBkRp.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-DbwEhxRP.css";
+var styles_default = "/assets/styles-Dfdkk_J4.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -266,6 +267,16 @@ var Route$4 = createRootRouteWithContext()({
 			{
 				rel: "stylesheet",
 				href: styles_default
+			},
+			{
+				rel: "icon",
+				href: logo_default,
+				type: "image/png"
+			},
+			{
+				rel: "apple-touch-icon",
+				href: logo_default,
+				type: "image/png"
 			}
 		]
 	}),
@@ -287,7 +298,7 @@ function RootComponent() {
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageTransition, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollToTop, {})]
 	});
 }
-var $$splitComponentImporter$3 = () => import("./solutions-C9YhLBjr.mjs");
+var $$splitComponentImporter$3 = () => import("./solutions-DgBBtErk.mjs");
 var Route$3 = createFileRoute("/solutions")({
 	head: () => ({ meta: [
 		{ title: "Solutions —  Saudi Controls" },
@@ -306,7 +317,7 @@ var Route$3 = createFileRoute("/solutions")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("./projects-BRbv8kB8.mjs");
+var $$splitComponentImporter$2 = () => import("./projects-Cvodu7Dq.mjs");
 var Route$2 = createFileRoute("/projects")({
 	head: () => ({ meta: [
 		{ title: "Projects — Saudi Controls" },
@@ -321,7 +332,7 @@ var Route$2 = createFileRoute("/projects")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter$1 = () => import("./about-CAd-ZUwK.mjs");
+var $$splitComponentImporter$1 = () => import("./about-DssyN7CF.mjs");
 var Route$1 = createFileRoute("/about")({
 	head: () => ({ meta: [
 		{ title: "About — Saudi Controls " },
@@ -340,7 +351,7 @@ var Route$1 = createFileRoute("/about")({
 	] }),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./routes-Q-tYY_Qk.mjs");
+var $$splitComponentImporter = () => import("./routes-BrQM3697.mjs");
 data_default.latest_news;
 var Route = createFileRoute("/")({
 	head: () => ({ meta: [{ title: `${company.name} — ${company.tagline}` }, {

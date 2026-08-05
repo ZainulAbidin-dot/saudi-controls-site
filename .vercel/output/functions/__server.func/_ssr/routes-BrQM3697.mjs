@@ -4,7 +4,7 @@ import { n as svc_comms_2_default, t as svc_bms_default } from "./svc-comms-2-J3
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { C as Building2, D as ArrowLeft, E as ArrowRight, O as Sparkles, T as ArrowUpRight, a as TrafficCone, c as Shield, i as TrendingUp, k as CircleCheck, p as Phone, s as Star, t as Zap, u as Radio, x as Cpu } from "../_libs/lucide-react.mjs";
-import { n as SiteNav, t as SiteFooter } from "./SiteFooter-CLv72zoe.mjs";
+import { n as SiteNav, t as SiteFooter } from "./SiteFooter-TplmrFcN.mjs";
 import { n as useScroll, t as useTransform } from "../_libs/framer-motion.mjs";
 import { t as motion } from "../_libs/motion.mjs";
 import { t as svc_ev_default } from "./svc-ev-BrRBicNa.mjs";
@@ -12,7 +12,7 @@ import { t as svc_bms_2_default } from "./svc-bms-2-DVniynm9.mjs";
 import { n as company, r as data_default, t as aboutData } from "./routes-BpdpevyR.mjs";
 import { n as svc_security_default, r as svc_traffic_default, t as svc_iot_default } from "./svc-security-DYAAzP32.mjs";
 import { t as useEmblaCarousel } from "../_libs/embla-carousel-react+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-Q-tYY_Qk.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-BrQM3697.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var svc_ev_2_default = "/assets/svc-ev-2-BVr0ihjR.jpeg";
@@ -1556,6 +1556,36 @@ function Testimonial() {
 		})
 	});
 }
+function ITSNews() {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
+		className: "relative bg-background py-20 sm:py-28",
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+			className: "mx-auto max-w-7xl px-6",
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.div, {
+				...fadeUp,
+				className: "overflow-hidden rounded-[32px] border border-foreground/10 bg-gradient-to-br from-white via-mint-soft/40 to-secondary p-8 shadow-card sm:p-10 lg:p-14",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					className: "flex flex-wrap items-start justify-between gap-4",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Pill, { children: "News & Insights" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+						className: "mt-5 max-w-3xl text-balance text-3xl font-bold leading-[1.05] tracking-[-0.02em] sm:text-4xl lg:text-5xl",
+						children: "Intelligent Traffic Systems and Smart Mobility Infrastructure"
+					})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						className: "rounded-full border border-foreground/10 bg-white/70 px-4 py-2 text-sm font-semibold text-foreground/70 backdrop-blur",
+						children: "Saudi Controls"
+					})]
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.p, {
+					...fadeUp,
+					transition: {
+						...fadeUp.transition,
+						delay: .08
+					},
+					className: "mt-8 max-w-4xl text-lg leading-relaxed text-foreground/70",
+					children: "Saudi Controls is a Saudi-based systems integrator with extensive experience in Intelligent Traffic Systems (ITS) and Smart Mobility Infrastructure across the Kingdom. We support infrastructure contractors and public entities with end-to-end services, including system design, integration, implementation, and long-term operation and maintenance for traffic management and related smart city solutions. Our local presence, multi-disciplinary engineering teams, and familiarity with Saudi regulatory and project environments make Saudi Controls a reliable partner for ITS deployments aligned with Vision 2030 and major national infrastructure programs."
+				})]
+			})
+		})
+	});
+}
 function CTA() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 		id: "contact",
@@ -1612,6 +1642,7 @@ function Index() {
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Hero, {}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Marquee, {}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(About, {}),
+			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ITSNews, {}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Services, {}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Bento, {}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SolutionsList, {}),
