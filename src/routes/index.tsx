@@ -21,18 +21,18 @@ import {
 
 import heroPortrait from "@/assets/company.jpg";
 import aboutTeam from "@/assets/about-team.jpg";
-import svcEv from "@/assets/svc-ev.jpeg";
+import svcEv from "@/assets/svc-ev.jpg";
 import svcEv2 from "@/assets/svc-ev-2.jpeg";
 import svcBms from "@/assets/svc-bms.jpg";
 import svcBms2 from "@/assets/svc-bms-2.jpeg";
-import svcTraffic from "@/assets/svc-traffic.jpeg";
+import svcTraffic from "@/assets/svc-traffic.jpg";
 import svcTraffic2 from "@/assets/svc-traffic-2.jpeg";
 import svcIot from "@/assets/svc-iot.jpg";
-import svcIot3 from "@/assets/svc-iot-3.jpeg";
-import svcComms from "@/assets/svc-comms-4.png";
+import svcIot3 from "@/assets/svc-iot-3.jpg";
+import svcComms from "@/assets/svc-comms.jpg";
 import svcSecurity from "@/assets/svc-security.jpg";
-import svcSecurity2 from "@/assets/svc-comms-2.jpeg";
-import svcSecurity3 from "@/assets/svc-security-3.jpeg";
+import svcSecurity2 from "@/assets/svc-security-2.png";
+import svcSecurity3 from "@/assets/svc-security-3.png";
 import avatar1 from "@/assets/clients/ZDEnergy.png";
 import avatar3 from "@/assets/clients/Flir.jpg";
 import avatar4 from "@/assets/clients/HikVision.jpg";
@@ -77,7 +77,7 @@ const EASE = [0.16, 1, 0.3, 1] as const;
 
 const fadeUp = {
   initial: { opacity: 0, y: 28 },
-  whileInView: { opacity: 1, y: 0 },
+  animate: { opacity: 1, y: 0 },
   viewport: { once: true, margin: "-80px" },
   transition: { duration: 0.8, ease: EASE },
 };
@@ -100,7 +100,7 @@ function SplitWords({
           <motion.span
             className="inline-block"
             initial={{ y: "110%" }}
-            whileInView={{ y: "0%" }}
+            animate={{ y: "0%" }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.9, delay: delay + i * stagger, ease: EASE }}
           >
@@ -220,12 +220,8 @@ function Hero() {
             transition={{ ...fadeUp.transition, delay: 0.6 }}
             className="mt-10 flex flex-wrap items-center gap-3"
           >
-            <a href="#contact">
-              <PrimaryButton>Talk to Sales</PrimaryButton>
-            </a>
-            <Link to="/solutions">
-              <GhostButton>View Solutions</GhostButton>
-            </Link>
+            <PrimaryButton>Talk to Sales</PrimaryButton>
+            <GhostButton>View Solutions</GhostButton>
           </motion.div>
 
           {/* values strip */}
@@ -361,7 +357,7 @@ function About() {
         <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-[1.6fr_1fr]">
           <motion.div
             initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            animate={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.9, ease: EASE }}
             className="group relative aspect-[16/10] overflow-hidden rounded-3xl bg-foreground shadow-card"
@@ -373,7 +369,7 @@ function About() {
               width={1600}
               height={900}
               initial={{ scale: 1.15 }}
-              whileInView={{ scale: 1 }}
+              animate={{ scale: 1 }}
               viewport={{ once: true, margin: "-80px" }}
               transition={{ duration: 1.6, ease: EASE }}
               className="h-full w-full object-cover transition-transform duration-[1500ms] ease-out group-hover:scale-[1.04]"
@@ -432,13 +428,13 @@ function About() {
 /* services */
 const services = [
   {
-    title: "Intelligent Transportation Systems",
-    desc: "Smart transport solutions enabling smooth mobility with intelligent traffic integration.",
+    title: "Transportation Systems",
+    desc: "Saudi Controls is a Saudi-based systems integrator delivering end-to-end Intelligent Traffic Systems (ITS) and smart mobility solutions for infrastructure contractors and public entities across the Kingdom.",
     img: svcTraffic,
     icon: TrafficCone,
   },
   {
-    title: "Building Management System",
+    title: "Building Management",
     desc: "Smart-building stacks optimising energy, security and real-time operational efficiency.",
     img: svcBms,
     icon: Building2,
@@ -499,7 +495,7 @@ function OMRow({
         <motion.div
           style={{ y: yBig }}
           initial={{ opacity: 0, scale: 0.94 }}
-          whileInView={{ opacity: 1, scale: 1 }}
+          animate={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 1, ease: EASE }}
           className={`group absolute top-0 h-[78%] w-[62%] overflow-hidden rounded-[36px] shadow-lift ring-1 ring-black/5 ${
@@ -516,7 +512,7 @@ function OMRow({
         <motion.div
           style={{ y: ySmall }}
           initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 1, delay: 0.15, ease: EASE }}
           className={`group absolute bottom-0 h-[52%] w-[48%] overflow-hidden rounded-[28px] shadow-card ring-1 ring-black/5 ${
@@ -538,7 +534,7 @@ function OMRow({
       {/* copy */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.8, ease: EASE }}
       >
@@ -555,6 +551,46 @@ function OMRow({
         </button>
       </motion.div>
     </div>
+  );
+}
+
+function ITSNews() {
+  return (
+    <section className="relative bg-background py-20 sm:py-28">
+      <div className="mx-auto max-w-7xl px-6">
+        <motion.div
+          {...fadeUp}
+          className="overflow-hidden rounded-[32px] border border-foreground/10 bg-gradient-to-br from-white via-mint-soft/40 to-secondary p-8 shadow-card sm:p-10 lg:p-14"
+        >
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <Pill>News & Insights</Pill>
+              <h2 className="mt-5 max-w-3xl text-balance text-3xl font-bold leading-[1.05] tracking-[-0.02em] sm:text-4xl lg:text-5xl">
+                Intelligent Traffic Systems and Smart Mobility Infrastructure
+              </h2>
+            </div>
+            <span className="rounded-full border border-foreground/10 bg-white/70 px-4 py-2 text-sm font-semibold text-foreground/70 backdrop-blur">
+              Saudi Controls
+            </span>
+          </div>
+
+          <motion.p
+            {...fadeUp}
+            transition={{ ...fadeUp.transition, delay: 0.08 }}
+            className="mt-8 max-w-4xl text-lg leading-relaxed text-foreground/70"
+          >
+            Saudi Controls is a Saudi-based systems integrator with extensive experience in
+            Intelligent Traffic Systems (ITS) and Smart Mobility Infrastructure across the Kingdom.
+            We support infrastructure contractors and public entities with end-to-end services,
+            including system design, integration, implementation, and long-term operation and
+            maintenance for traffic management and related smart city solutions. Our local presence,
+            multi-disciplinary engineering teams, and familiarity with Saudi regulatory and project
+            environments make Saudi Controls a reliable partner for ITS deployments aligned with
+            Vision 2030 and major national infrastructure programs.
+          </motion.p>
+        </motion.div>
+      </div>
+    </section>
   );
 }
 
@@ -817,7 +853,7 @@ function Bento() {
               </defs>
               <motion.path
                 initial={{ pathLength: 0 }}
-                whileInView={{ pathLength: 1 }}
+                animate={{ pathLength: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 1.4, ease: EASE }}
                 d="M0 78 Q40 68 60 56 T120 32 T200 6"
@@ -829,7 +865,7 @@ function Bento() {
               <path d="M0 78 Q40 68 60 56 T120 32 T200 6 L200 90 L0 90 Z" fill="url(#ar)" />
               <motion.circle
                 initial={{ scale: 0 }}
-                whileInView={{ scale: 1 }}
+                animate={{ scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 1.2, duration: 0.4, ease: EASE }}
                 cx="200"
@@ -878,7 +914,7 @@ function Bento() {
                 <motion.img
                   key={i}
                   initial={{ opacity: 0, x: -10 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                  animate={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: 0.1 + i * 0.08, duration: 0.5, ease: EASE }}
                   src={a}
@@ -903,7 +939,7 @@ function Bento() {
             <div className="mt-6 flex items-end gap-5">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, ease: EASE }}
                 className="font-display text-7xl italic leading-none"
@@ -960,7 +996,7 @@ function SolutionsList() {
             <motion.div
               key={s.n}
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-30px" }}
               transition={{ duration: 0.5, delay: i * 0.04 }}
               className="group grid cursor-pointer grid-cols-[auto_1fr_auto] items-center gap-6 py-7 transition-colors hover:bg-mint-soft/30 sm:gap-12"
@@ -1103,7 +1139,7 @@ function RecentWork() {
         {/* Carousel */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.9, ease: EASE }}
           className="mt-14"
@@ -1319,6 +1355,7 @@ function Index() {
       <Hero />
       <Marquee />
       <About />
+      <ITSNews />
       <Services />
       <Bento />
       <SolutionsList />

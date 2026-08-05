@@ -10,6 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import logoAsset from "../assets/logo.png";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import PageTransition from "@/components/PageTransition";
 import ScrollToTop from "@/components/ScrollToTop";
@@ -83,13 +84,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Saudi Controls designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
+          "Meridian designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
       },
       { property: "og:title", content: "Saudi Controls" },
       {
         property: "og:description",
         content:
-          "Saudi Controls designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
+          "Meridian designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -97,7 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "twitter:description",
         content:
-          "Saudi Controls designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
+          "Meridian designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
       },
       {
         property: "og:image",
@@ -118,6 +119,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap",
       },
       { rel: "stylesheet", href: appCss },
+      { rel: "icon", href: logoAsset, type: "image/png" },
+      { rel: "apple-touch-icon", href: logoAsset, type: "image/png" },
     ],
   }),
   shellComponent: RootShell,
