@@ -10,10 +10,10 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import logoAsset from "../assets/logo.png";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import PageTransition from "@/components/PageTransition";
 import ScrollToTop from "@/components/ScrollToTop";
+import logoAsset from "../assets/logo.png";
 
 function NotFoundComponent() {
   return (
@@ -84,13 +84,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Meridian designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
+          "Saudi Controls designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
       },
       { property: "og:title", content: "Saudi Controls" },
       {
         property: "og:description",
         content:
-          "Meridian designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
+          "Saudi Controls designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -98,7 +98,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "twitter:description",
         content:
-          "Meridian designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
+          "Saudi Controls designs, integrates and maintains advanced control, automation and infrastructure systems for industry and smart cities.",
       },
       {
         property: "og:image",
