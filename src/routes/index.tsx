@@ -1278,6 +1278,46 @@ function Testimonial() {
   );
 }
 
+function ITSNews() {
+  return (
+    <section className="relative bg-background py-20 sm:py-28">
+      <div className="mx-auto max-w-7xl px-6">
+        <motion.div
+          {...fadeUp}
+          className="overflow-hidden rounded-[32px] border border-foreground/10 bg-gradient-to-br from-white via-mint-soft/40 to-secondary p-8 shadow-card sm:p-10 lg:p-14"
+        >
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <Pill>News & Insights</Pill>
+              <h2 className="mt-5 max-w-3xl text-balance text-3xl font-bold leading-[1.05] tracking-[-0.02em] sm:text-4xl lg:text-5xl">
+                Intelligent Traffic Systems and Smart Mobility Infrastructure
+              </h2>
+            </div>
+            <span className="rounded-full border border-foreground/10 bg-white/70 px-4 py-2 text-sm font-semibold text-foreground/70 backdrop-blur">
+              Saudi Controls
+            </span>
+          </div>
+
+          <motion.p
+            {...fadeUp}
+            transition={{ ...fadeUp.transition, delay: 0.08 }}
+            className="mt-8 max-w-4xl text-lg leading-relaxed text-foreground/70"
+          >
+            Saudi Controls is a Saudi-based systems integrator with extensive experience in
+            Intelligent Traffic Systems (ITS) and Smart Mobility Infrastructure across the Kingdom.
+            We support infrastructure contractors and public entities with end-to-end services,
+            including system design, integration, implementation, and long-term operation and
+            maintenance for traffic management and related smart city solutions. Our local presence,
+            multi-disciplinary engineering teams, and familiarity with Saudi regulatory and project
+            environments make Saudi Controls a reliable partner for ITS deployments aligned with
+            Vision 2030 and major national infrastructure programs.
+          </motion.p>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
 function CTA() {
   return (
     <section id="contact" className="bg-mint-soft/50 py-24 sm:py-32">
@@ -1319,6 +1359,7 @@ function Index() {
       <Hero />
       <Marquee />
       <About />
+      <ITSNews />
       <Services />
       <Bento />
       <SolutionsList />
