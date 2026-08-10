@@ -1,9 +1,9 @@
 import { o as __toESM } from "../_runtime.mjs";
 import { t as logo_default } from "./logo-Dp6Mx8tO.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { m as Menu, n as X, p as Phone } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/SiteFooter-TplmrFcN.js
+import { _ as Link } from "../_libs/@tanstack/react-router+[...].mjs";
+import { C as ChevronDown, m as Menu, n as X, p as Phone } from "../_libs/lucide-react.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/SiteFooter-BqwPtmLh.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var navLinks = [
@@ -17,22 +17,40 @@ var navLinks = [
 		label: "About"
 	},
 	{
-		to: "/solutions",
-		label: "Solutions"
-	},
-	{
 		to: "/projects",
 		label: "Projects"
 	}
 ];
+var solutionLinks = [{
+	to: "/solutions",
+	label: "All Solutions"
+}, {
+	to: "/solutions/building-management-system-bms",
+	label: "BMS"
+}];
 function SiteNav() {
 	const [scrolled, setScrolled] = (0, import_react.useState)(false);
 	const [open, setOpen] = (0, import_react.useState)(false);
+	const [solutionsOpen, setSolutionsOpen] = (0, import_react.useState)(false);
+	const solutionsTimeoutRef = (0, import_react.useRef)(null);
+	const openSolutionsMenu = () => {
+		if (solutionsTimeoutRef.current) window.clearTimeout(solutionsTimeoutRef.current);
+		setSolutionsOpen(true);
+	};
+	const closeSolutionsMenu = () => {
+		if (solutionsTimeoutRef.current) window.clearTimeout(solutionsTimeoutRef.current);
+		solutionsTimeoutRef.current = window.setTimeout(() => setSolutionsOpen(false), 120);
+	};
 	(0, import_react.useEffect)(() => {
 		const onScroll = () => setScrolled(window.scrollY > 24);
 		onScroll();
 		window.addEventListener("scroll", onScroll, { passive: true });
 		return () => window.removeEventListener("scroll", onScroll);
+	}, []);
+	(0, import_react.useEffect)(() => {
+		return () => {
+			if (solutionsTimeoutRef.current) window.clearTimeout(solutionsTimeoutRef.current);
+		};
 	}, []);
 	(0, import_react.useEffect)(() => {
 		document.body.style.overflow = open ? "hidden" : "";
@@ -63,15 +81,40 @@ function SiteNav() {
 						className: "h-10 w-auto md:h-12 shrink-0 object-contain"
 					})
 				}),
-				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
-					className: "hidden items-center gap-9 md:flex",
-					children: navLinks.map((l) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
+					className: "hidden items-center gap-7 md:flex",
+					children: [navLinks.map((l) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
 						to: l.to,
 						activeOptions: l.exact ? { exact: true } : void 0,
 						activeProps: { className: "story-link text-sm font-medium text-foreground" },
 						inactiveProps: { className: "story-link text-sm text-foreground/70 transition-colors hover:text-foreground" },
 						children: l.label
-					}, l.to))
+					}, l.to)), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "relative",
+						onMouseEnter: openSolutionsMenu,
+						onMouseLeave: closeSolutionsMenu,
+						onFocus: openSolutionsMenu,
+						onBlur: (event) => {
+							if (!event.currentTarget.contains(event.relatedTarget)) closeSolutionsMenu();
+						},
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("button", {
+							type: "button",
+							onClick: () => setSolutionsOpen((value) => !value),
+							className: "inline-flex items-center gap-1.5 text-sm text-foreground/70 transition-colors hover:text-foreground",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "Solutions" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ChevronDown, { className: `h-4 w-4 transition-transform ${solutionsOpen ? "rotate-180" : ""}` })]
+						}), solutionsOpen && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "absolute left-0 top-full mt-3 min-w-48 rounded-xl border border-foreground/10 bg-background/95 p-2 shadow-[0_20px_40px_-24px_rgba(15,23,42,0.3)] backdrop-blur-xl",
+							onMouseEnter: openSolutionsMenu,
+							onMouseLeave: closeSolutionsMenu,
+							children: solutionLinks.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+								to: item.to,
+								onClick: () => setSolutionsOpen(false),
+								activeProps: { className: "block rounded-lg bg-foreground/5 px-3 py-2 text-sm font-medium text-foreground" },
+								inactiveProps: { className: "block rounded-lg px-3 py-2 text-sm text-foreground/70 transition-colors hover:bg-foreground/5 hover:text-foreground" },
+								children: item.label
+							}, item.to))
+						})]
+					})]
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 					className: "flex items-center gap-2",
@@ -97,20 +140,36 @@ function SiteNav() {
 			className: `md:hidden overflow-hidden transition-[max-height,opacity] duration-500 ease-out ${open ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0"}`,
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("nav", {
 				className: "mx-auto flex max-w-7xl flex-col gap-1 px-6 pb-6 pt-4",
-				children: [navLinks.map((l) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-					to: l.to,
-					activeOptions: l.exact ? { exact: true } : void 0,
-					onClick: () => setOpen(false),
-					activeProps: { className: "rounded-xl bg-foreground/5 px-4 py-3 text-base font-semibold text-foreground" },
-					inactiveProps: { className: "rounded-xl px-4 py-3 text-base text-foreground/75 transition-colors hover:bg-foreground/5 hover:text-foreground" },
-					children: l.label
-				}, l.to)), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
-					to: "/",
-					hash: "contact",
-					onClick: () => setOpen(false),
-					className: "mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-4 py-3 text-sm font-medium text-background",
-					children: ["Contact Us", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Phone, { className: "h-3.5 w-3.5" })]
-				})]
+				children: [
+					navLinks.map((l) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+						to: l.to,
+						activeOptions: l.exact ? { exact: true } : void 0,
+						onClick: () => setOpen(false),
+						activeProps: { className: "rounded-xl bg-foreground/5 px-4 py-3 text-base font-semibold text-foreground" },
+						inactiveProps: { className: "rounded-xl px-4 py-3 text-base text-foreground/75 transition-colors hover:bg-foreground/5 hover:text-foreground" },
+						children: l.label
+					}, l.to)),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+						className: "rounded-xl border border-foreground/10 bg-foreground/5 px-2 py-2 text-base",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "px-2 py-1 text-sm font-medium text-foreground/60",
+							children: "Solutions"
+						}), solutionLinks.map((item) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+							to: item.to,
+							onClick: () => setOpen(false),
+							activeProps: { className: "block rounded-lg bg-foreground/10 px-4 py-2.5 text-sm font-medium text-foreground" },
+							inactiveProps: { className: "block rounded-lg px-4 py-2.5 text-sm text-foreground/75 transition-colors hover:bg-foreground/10 hover:text-foreground" },
+							children: item.label
+						}, item.to))]
+					}),
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
+						to: "/",
+						hash: "contact",
+						onClick: () => setOpen(false),
+						className: "mt-3 inline-flex items-center justify-center gap-2 rounded-full bg-foreground px-4 py-3 text-sm font-medium text-background",
+						children: ["Contact Us", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Phone, { className: "h-3.5 w-3.5" })]
+					})
+				]
 			})
 		})]
 	});

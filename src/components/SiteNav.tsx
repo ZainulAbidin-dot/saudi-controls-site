@@ -1,28 +1,56 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { Phone, Menu, X, ChevronDown } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import logoAsset from "../assets/logo.png";
 
 const navLinks: {
-  to: "/" | "/about" | "/solutions" | "/projects";
+  to: "/" | "/about" | "/solutions" | "/solutions/building-management-system-bms" | "/projects";
   label: string;
   exact?: boolean;
 }[] = [
   { to: "/", label: "Home", exact: true },
   { to: "/about", label: "About" },
-  { to: "/solutions", label: "Solutions" },
   { to: "/projects", label: "Projects" },
 ];
+
+const solutionLinks = [
+  { to: "/solutions", label: "All Solutions" },
+  { to: "/solutions/building-management-system-bms", label: "BMS" },
+] as const;
 
 export function SiteNav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [solutionsOpen, setSolutionsOpen] = useState(false);
+  const solutionsTimeoutRef = useRef<number | null>(null);
+
+  const openSolutionsMenu = () => {
+    if (solutionsTimeoutRef.current) {
+      window.clearTimeout(solutionsTimeoutRef.current);
+    }
+    setSolutionsOpen(true);
+  };
+
+  const closeSolutionsMenu = () => {
+    if (solutionsTimeoutRef.current) {
+      window.clearTimeout(solutionsTimeoutRef.current);
+    }
+    solutionsTimeoutRef.current = window.setTimeout(() => setSolutionsOpen(false), 120);
+  };
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    return () => {
+      if (solutionsTimeoutRef.current) {
+        window.clearTimeout(solutionsTimeoutRef.current);
+      }
+    };
   }, []);
 
   // Lock body scroll when mobile menu is open
@@ -64,7 +92,7 @@ export function SiteNav() {
           />
         </Link>
 
-        <nav className="hidden items-center gap-9 md:flex">
+        <nav className="hidden items-center gap-7 md:flex">
           {navLinks.map((l) => (
             <Link
               key={l.to}
@@ -81,6 +109,55 @@ export function SiteNav() {
               {l.label}
             </Link>
           ))}
+
+          <div
+            className="relative"
+            onMouseEnter={openSolutionsMenu}
+            onMouseLeave={closeSolutionsMenu}
+            onFocus={openSolutionsMenu}
+            onBlur={(event) => {
+              if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+                closeSolutionsMenu();
+              }
+            }}
+          >
+            <button
+              type="button"
+              onClick={() => setSolutionsOpen((value) => !value)}
+              className="inline-flex items-center gap-1.5 text-sm text-foreground/70 transition-colors hover:text-foreground"
+            >
+              <span>Solutions</span>
+              <ChevronDown
+                className={`h-4 w-4 transition-transform ${solutionsOpen ? "rotate-180" : ""}`}
+              />
+            </button>
+
+            {solutionsOpen && (
+              <div
+                className="absolute left-0 top-full mt-3 min-w-48 rounded-xl border border-foreground/10 bg-background/95 p-2 shadow-[0_20px_40px_-24px_rgba(15,23,42,0.3)] backdrop-blur-xl"
+                onMouseEnter={openSolutionsMenu}
+                onMouseLeave={closeSolutionsMenu}
+              >
+                {solutionLinks.map((item) => (
+                  <Link
+                    key={item.to}
+                    to={item.to}
+                    onClick={() => setSolutionsOpen(false)}
+                    activeProps={{
+                      className:
+                        "block rounded-lg bg-foreground/5 px-3 py-2 text-sm font-medium text-foreground",
+                    }}
+                    inactiveProps={{
+                      className:
+                        "block rounded-lg px-3 py-2 text-sm text-foreground/70 transition-colors hover:bg-foreground/5 hover:text-foreground",
+                    }}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+          </div>
         </nav>
 
         <div className="flex items-center gap-2">
@@ -133,6 +210,28 @@ export function SiteNav() {
               {l.label}
             </Link>
           ))}
+
+          <div className="rounded-xl border border-foreground/10 bg-foreground/5 px-2 py-2 text-base">
+            <div className="px-2 py-1 text-sm font-medium text-foreground/60">Solutions</div>
+            {solutionLinks.map((item) => (
+              <Link
+                key={item.to}
+                to={item.to}
+                onClick={() => setOpen(false)}
+                activeProps={{
+                  className:
+                    "block rounded-lg bg-foreground/10 px-4 py-2.5 text-sm font-medium text-foreground",
+                }}
+                inactiveProps={{
+                  className:
+                    "block rounded-lg px-4 py-2.5 text-sm text-foreground/75 transition-colors hover:bg-foreground/10 hover:text-foreground",
+                }}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+
           <Link
             to="/"
             hash="contact"

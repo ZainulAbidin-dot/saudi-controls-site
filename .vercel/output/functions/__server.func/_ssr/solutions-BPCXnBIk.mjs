@@ -1,22 +1,27 @@
 import { o as __toESM } from "../_runtime.mjs";
 import { n as svc_comms_2_default, t as svc_bms_default } from "./svc-comms-2-J3e2yYtG.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { g as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { C as Building2, D as ArrowLeft, O as Sparkles, T as ArrowUpRight, a as TrafficCone, b as Droplets, k as CircleCheck, l as ShieldCheck, t as Zap, v as Flame } from "../_libs/lucide-react.mjs";
-import { n as SiteNav, t as SiteFooter } from "./SiteFooter-TplmrFcN.mjs";
+import { _ as Link, l as useLocation, p as Outlet } from "../_libs/@tanstack/react-router+[...].mjs";
+import { A as CircleCheck, E as ArrowUpRight, O as ArrowLeft, a as TrafficCone, b as Droplets, k as Sparkles, l as ShieldCheck, t as Zap, v as Flame, w as Building2 } from "../_libs/lucide-react.mjs";
+import { n as SiteNav, t as SiteFooter } from "./SiteFooter-BqwPtmLh.mjs";
 import { n as useScroll, t as useTransform } from "../_libs/framer-motion.mjs";
 import { t as motion } from "../_libs/motion.mjs";
 import { t as svc_ev_default$1 } from "./svc-ev-BrRBicNa.mjs";
 import { t as svc_security_3_default } from "./svc-security-3-CvnVouFC.mjs";
 import { n as svc_security_default, r as svc_traffic_default, t as svc_iot_default } from "./svc-security-DYAAzP32.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/solutions-DgBBtErk.js
+//#region node_modules/.nitro/vite/services/ssr/assets/solutions-BPCXnBIk.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var svc_traffic_3_default = "/assets/svc-traffic-3-C1_Ne9dE.jpeg";
 var svc_bms_3_default = "/assets/svc-bms-3-LPRH2UhQ.jpeg";
-var svc_comms_3_default = "/assets/svc-comms-3-B-aB1e7D.jpeg";
+var svc_comms_3_default = "/assets/svc-security-3-B-aB1e7D.jpeg";
 var svc_ev_default = "/assets/svc-ev-BEDcqnP9.jpg";
 var svc_scada_default = "/assets/svc-scada-B1b9Kkcj.jpeg";
+function SolutionsLayout() {
+	const { pathname } = useLocation();
+	if (pathname === "/solutions/building-management-system-bms") return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {});
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(SolutionsPage, {});
+}
 var EASE = [
 	.16,
 	1,
@@ -508,4 +513,4 @@ function SolutionsPage() {
 	});
 }
 //#endregion
-export { SolutionsPage as component };
+export { SolutionsLayout as component };

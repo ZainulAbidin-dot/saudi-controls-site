@@ -1,16 +1,16 @@
 import { o as __toESM } from "../_runtime.mjs";
 import { t as logo_default } from "./logo-Dp6Mx8tO.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
-import { N as useRouter, c as HeadContent, d as createRouter, f as Outlet, g as Link, h as createRootRouteWithContext, l as useRouterState, m as createFileRoute, p as lazyRouteComponent, s as Scripts } from "../_libs/@tanstack/react-router+[...].mjs";
-import { w as ArrowUp } from "../_libs/lucide-react.mjs";
+import { P as useRouter, _ as Link, c as HeadContent, f as createRouter, g as createRootRouteWithContext, h as createFileRoute, m as lazyRouteComponent, p as Outlet, s as Scripts, u as useRouterState } from "../_libs/@tanstack/react-router+[...].mjs";
+import { T as ArrowUp } from "../_libs/lucide-react.mjs";
 import { i as AnimatePresence } from "../_libs/framer-motion.mjs";
 import { t as motion } from "../_libs/motion.mjs";
 import { n as company, r as data_default, t as aboutData } from "./routes-BpdpevyR.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-Ce5yBkRp.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-DncIsmy4.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-Dfdkk_J4.css";
+var styles_default = "/assets/styles-S07rTp60.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -204,7 +204,7 @@ function ErrorComponent({ error, reset }) {
 		})
 	});
 }
-var Route$4 = createRootRouteWithContext()({
+var Route$5 = createRootRouteWithContext()({
 	head: () => ({
 		meta: [
 			{ charSet: "utf-8" },
@@ -292,14 +292,14 @@ function RootShell({ children }) {
 	});
 }
 function RootComponent() {
-	const { queryClient } = Route$4.useRouteContext();
+	const { queryClient } = Route$5.useRouteContext();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(QueryClientProvider, {
 		client: queryClient,
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageTransition, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollToTop, {})]
 	});
 }
-var $$splitComponentImporter$3 = () => import("./solutions-DgBBtErk.mjs");
-var Route$3 = createFileRoute("/solutions")({
+var $$splitComponentImporter$4 = () => import("./solutions-BPCXnBIk.mjs");
+var Route$4 = createFileRoute("/solutions")({
 	head: () => ({ meta: [
 		{ title: "Solutions —  Saudi Controls" },
 		{
@@ -315,10 +315,10 @@ var Route$3 = createFileRoute("/solutions")({
 			content: "Elevating innovation through bespoke technological mastery — where vision meets precision."
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$3, "component")
+	component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-var $$splitComponentImporter$2 = () => import("./projects-Cvodu7Dq.mjs");
-var Route$2 = createFileRoute("/projects")({
+var $$splitComponentImporter$3 = () => import("./projects-1Sh6Zbzn.mjs");
+var Route$3 = createFileRoute("/projects")({
 	head: () => ({ meta: [
 		{ title: "Projects — Saudi Controls" },
 		{
@@ -330,10 +330,10 @@ var Route$2 = createFileRoute("/projects")({
 			content: "Projects — Saudi Controls"
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$2, "component")
+	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$1 = () => import("./about-DssyN7CF.mjs");
-var Route$1 = createFileRoute("/about")({
+var $$splitComponentImporter$2 = () => import("./about-kLXak1P6.mjs");
+var Route$2 = createFileRoute("/about")({
 	head: () => ({ meta: [
 		{ title: "About — Saudi Controls " },
 		{
@@ -349,43 +349,106 @@ var Route$1 = createFileRoute("/about")({
 			content: "Where local talent meets global expertise to turn ambition into operational reality."
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$1, "component")
+	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter = () => import("./routes-BrQM3697.mjs");
+var $$splitComponentImporter$1 = () => import("./routes-CgnPQg_t.mjs");
 data_default.latest_news;
-var Route = createFileRoute("/")({
+var Route$1 = createFileRoute("/")({
 	head: () => ({ meta: [{ title: `${company.name} — ${company.tagline}` }, {
 		name: "description",
 		content: aboutData.summary
 	}] }),
+	component: lazyRouteComponent($$splitComponentImporter$1, "component")
+});
+var $$splitComponentImporter = () => import("./building-management-system-bms-Bf_hjgbb.mjs");
+var Route = createFileRoute("/solutions/building-management-system-bms")({
+	head: () => ({
+		meta: [
+			{ title: "Building Management System (BMS) in Saudi Arabia | Saudi Controls" },
+			{
+				name: "description",
+				content: "Saudi Controls delivers Building Management System (BMS) solutions in Saudi Arabia for centralized HVAC, lighting, energy, security and building automation, including design, integration, installation and maintenance."
+			},
+			{
+				name: "keywords",
+				content: "building management system Saudi Arabia, BMS Saudi Arabia, BMS solutions, BMS services, building automation system, building automation Saudi Arabia, BMS company Saudi Arabia, BMS contractor Saudi Arabia, BMS integration, HVAC controls, BMS installation, BMS maintenance, BMS commissioning"
+			},
+			{
+				name: "robots",
+				content: "index, follow"
+			},
+			{
+				property: "og:title",
+				content: "Building Management System (BMS) in Saudi Arabia | Saudi Controls"
+			},
+			{
+				property: "og:description",
+				content: "End-to-end Building Management System and building automation solutions in Saudi Arabia from Saudi Controls."
+			},
+			{
+				property: "og:type",
+				content: "website"
+			},
+			{
+				property: "og:url",
+				content: "https://www.saudicontrols.com/solutions/building-management-system-bms"
+			},
+			{
+				property: "og:site_name",
+				content: "Saudi Controls"
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image"
+			},
+			{
+				name: "twitter:title",
+				content: "Building Management System (BMS) in Saudi Arabia | Saudi Controls"
+			},
+			{
+				name: "twitter:description",
+				content: "Building Management System, building automation, HVAC controls and systems integration solutions in Saudi Arabia."
+			}
+		],
+		links: [{
+			rel: "canonical",
+			href: "https://www.saudicontrols.com/solutions/building-management-system-bms"
+		}]
+	}),
 	component: lazyRouteComponent($$splitComponentImporter, "component")
 });
-var SolutionsRoute = Route$3.update({
+var SolutionsRoute = Route$4.update({
 	id: "/solutions",
 	path: "/solutions",
-	getParentRoute: () => Route$4
+	getParentRoute: () => Route$5
 });
-var ProjectsRoute = Route$2.update({
+var ProjectsRoute = Route$3.update({
 	id: "/projects",
 	path: "/projects",
-	getParentRoute: () => Route$4
+	getParentRoute: () => Route$5
 });
-var AboutRoute = Route$1.update({
+var AboutRoute = Route$2.update({
 	id: "/about",
 	path: "/about",
-	getParentRoute: () => Route$4
+	getParentRoute: () => Route$5
 });
+var IndexRoute = Route$1.update({
+	id: "/",
+	path: "/",
+	getParentRoute: () => Route$5
+});
+var SolutionsRouteChildren = { SolutionsBuildingManagementSystemBmsRoute: Route.update({
+	id: "/building-management-system-bms",
+	path: "/building-management-system-bms",
+	getParentRoute: () => SolutionsRoute
+}) };
 var rootRouteChildren = {
-	IndexRoute: Route.update({
-		id: "/",
-		path: "/",
-		getParentRoute: () => Route$4
-	}),
+	IndexRoute,
 	AboutRoute,
 	ProjectsRoute,
-	SolutionsRoute
+	SolutionsRoute: SolutionsRoute._addFileChildren(SolutionsRouteChildren)
 };
-var routeTree = Route$4._addFileChildren(rootRouteChildren)._addFileTypes();
+var routeTree = Route$5._addFileChildren(rootRouteChildren)._addFileTypes();
 var getRouter = () => {
 	return createRouter({
 		routeTree,

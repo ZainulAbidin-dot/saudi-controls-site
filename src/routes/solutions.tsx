@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, Outlet, useLocation } from "@tanstack/react-router";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 import {
@@ -47,8 +47,18 @@ export const Route = createFileRoute("/solutions")({
       },
     ],
   }),
-  component: SolutionsPage,
+  component: SolutionsLayout,
 });
+
+function SolutionsLayout() {
+  const { pathname } = useLocation();
+
+  if (pathname === "/solutions/building-management-system-bms") {
+    return <Outlet />;
+  }
+
+  return <SolutionsPage />;
+}
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 

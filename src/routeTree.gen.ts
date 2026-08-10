@@ -13,6 +13,7 @@ import { Route as SolutionsRouteImport } from './routes/solutions'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SolutionsBuildingManagementSystemBmsRouteImport } from './routes/solutions/building-management-system-bms'
 
 const SolutionsRoute = SolutionsRouteImport.update({
   id: '/solutions',
@@ -34,39 +35,64 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SolutionsBuildingManagementSystemBmsRoute =
+  SolutionsBuildingManagementSystemBmsRouteImport.update({
+    id: '/building-management-system-bms',
+    path: '/building-management-system-bms',
+    getParentRoute: () => SolutionsRoute,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/projects': typeof ProjectsRoute
-  '/solutions': typeof SolutionsRoute
+  '/solutions': typeof SolutionsRouteWithChildren
+  '/solutions/building-management-system-bms': typeof SolutionsBuildingManagementSystemBmsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/projects': typeof ProjectsRoute
-  '/solutions': typeof SolutionsRoute
+  '/solutions': typeof SolutionsRouteWithChildren
+  '/solutions/building-management-system-bms': typeof SolutionsBuildingManagementSystemBmsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/projects': typeof ProjectsRoute
-  '/solutions': typeof SolutionsRoute
+  '/solutions': typeof SolutionsRouteWithChildren
+  '/solutions/building-management-system-bms': typeof SolutionsBuildingManagementSystemBmsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/projects' | '/solutions'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/projects'
+    | '/solutions'
+    | '/solutions/building-management-system-bms'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/projects' | '/solutions'
-  id: '__root__' | '/' | '/about' | '/projects' | '/solutions'
+  to:
+    | '/'
+    | '/about'
+    | '/projects'
+    | '/solutions'
+    | '/solutions/building-management-system-bms'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/projects'
+    | '/solutions'
+    | '/solutions/building-management-system-bms'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   ProjectsRoute: typeof ProjectsRoute
-  SolutionsRoute: typeof SolutionsRoute
+  SolutionsRoute: typeof SolutionsRouteWithChildren
 }
 
 declare module '@tanstack/react-router' {
@@ -99,14 +125,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/solutions/building-management-system-bms': {
+      id: '/solutions/building-management-system-bms'
+      path: '/building-management-system-bms'
+      fullPath: '/solutions/building-management-system-bms'
+      preLoaderRoute: typeof SolutionsBuildingManagementSystemBmsRouteImport
+      parentRoute: typeof SolutionsRoute
+    }
   }
 }
+
+interface SolutionsRouteChildren {
+  SolutionsBuildingManagementSystemBmsRoute: typeof SolutionsBuildingManagementSystemBmsRoute
+}
+
+const SolutionsRouteChildren: SolutionsRouteChildren = {
+  SolutionsBuildingManagementSystemBmsRoute:
+    SolutionsBuildingManagementSystemBmsRoute,
+}
+
+const SolutionsRouteWithChildren = SolutionsRoute._addFileChildren(
+  SolutionsRouteChildren,
+)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   ProjectsRoute: ProjectsRoute,
-  SolutionsRoute: SolutionsRoute,
+  SolutionsRoute: SolutionsRouteWithChildren,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

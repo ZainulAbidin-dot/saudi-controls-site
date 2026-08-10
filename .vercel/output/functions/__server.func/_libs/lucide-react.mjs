@@ -250,6 +250,16 @@ var Building2 = createLucideIcon("building-2", [
 * This source code is licensed under the ISC license.
 * See the LICENSE file in the root directory of this source tree.
 */
+var ChevronDown = createLucideIcon("chevron-down", [["path", {
+	d: "m6 9 6 6 6-6",
+	key: "qrunsl"
+}]]);
+/**
+* @license lucide-react v1.21.0 - ISC
+*
+* This source code is licensed under the ISC license.
+* See the LICENSE file in the root directory of this source tree.
+*/
 var Compass = createLucideIcon("compass", [["circle", {
 	cx: "12",
 	cy: "12",
@@ -657,4 +667,4 @@ var Zap = createLucideIcon("zap", [["path", {
 	key: "1xq2db"
 }]]);
 //#endregion
-export { Building2 as C, ArrowLeft as D, ArrowRight as E, Sparkles as O, Compass as S, ArrowUpRight as T, Handshake as _, TrafficCone as a, Droplets as b, Shield as c, Quote as d, Plane as f, HeartHandshake as g, MapPin as h, TrendingUp as i, CircleCheck as k, ShieldCheck as l, Menu as m, X as n, Target as o, Phone as p, Trophy as r, Star as s, Zap as t, Radio as u, Flame as v, ArrowUp as w, Cpu as x, Eye as y };
+export { CircleCheck as A, ChevronDown as C, ArrowRight as D, ArrowUpRight as E, ArrowLeft as O, Compass as S, ArrowUp as T, Handshake as _, TrafficCone as a, Droplets as b, Shield as c, Quote as d, Plane as f, HeartHandshake as g, MapPin as h, TrendingUp as i, Sparkles as k, ShieldCheck as l, Menu as m, X as n, Target as o, Phone as p, Trophy as r, Star as s, Zap as t, Radio as u, Flame as v, Building2 as w, Cpu as x, Eye as y };
