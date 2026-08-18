@@ -3,11 +3,11 @@ import { n as company_default, r as svc_iot_3_default, t as about_team_default }
 import { n as svc_comms_2_default, t as svc_bms_default } from "./svc-comms-2-J3e2yYtG.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { A as CircleCheck, E as ArrowUpRight, O as ArrowLeft, S as Compass, d as Quote, g as HeartHandshake, k as Sparkles, o as Target, y as Eye } from "../_libs/lucide-react.mjs";
-import { n as SiteNav, t as SiteFooter } from "./SiteFooter-BqwPtmLh.mjs";
+import { A as Compass, B as CircleCheck, C as HeartHandshake, D as Eye, I as ArrowUpRight, R as ArrowLeft, g as Quote, l as Target, z as Sparkles } from "../_libs/lucide-react.mjs";
+import { n as SiteNav, t as SiteFooter } from "./SiteFooter-BCI8bdFC.mjs";
 import { n as useScroll, t as useTransform } from "../_libs/framer-motion.mjs";
 import { t as motion } from "../_libs/motion.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/about-kLXak1P6.js
+//#region node_modules/.nitro/vite/services/ssr/assets/about-CMhB2DsE.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var about_promise_default = "/assets/about-promise-BUYlwgtF.jpeg";

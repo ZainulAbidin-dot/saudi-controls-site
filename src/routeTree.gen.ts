@@ -13,6 +13,7 @@ import { Route as SolutionsRouteImport } from './routes/solutions'
 import { Route as ProjectsRouteImport } from './routes/projects'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as SolutionsIntelligentTrafficSystemItsRouteImport } from './routes/solutions/intelligent-traffic-system-its'
 import { Route as SolutionsBuildingManagementSystemBmsRouteImport } from './routes/solutions/building-management-system-bms'
 
 const SolutionsRoute = SolutionsRouteImport.update({
@@ -35,6 +36,12 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SolutionsIntelligentTrafficSystemItsRoute =
+  SolutionsIntelligentTrafficSystemItsRouteImport.update({
+    id: '/intelligent-traffic-system-its',
+    path: '/intelligent-traffic-system-its',
+    getParentRoute: () => SolutionsRoute,
+  } as any)
 const SolutionsBuildingManagementSystemBmsRoute =
   SolutionsBuildingManagementSystemBmsRouteImport.update({
     id: '/building-management-system-bms',
@@ -48,6 +55,7 @@ export interface FileRoutesByFullPath {
   '/projects': typeof ProjectsRoute
   '/solutions': typeof SolutionsRouteWithChildren
   '/solutions/building-management-system-bms': typeof SolutionsBuildingManagementSystemBmsRoute
+  '/solutions/intelligent-traffic-system-its': typeof SolutionsIntelligentTrafficSystemItsRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -55,6 +63,7 @@ export interface FileRoutesByTo {
   '/projects': typeof ProjectsRoute
   '/solutions': typeof SolutionsRouteWithChildren
   '/solutions/building-management-system-bms': typeof SolutionsBuildingManagementSystemBmsRoute
+  '/solutions/intelligent-traffic-system-its': typeof SolutionsIntelligentTrafficSystemItsRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -63,6 +72,7 @@ export interface FileRoutesById {
   '/projects': typeof ProjectsRoute
   '/solutions': typeof SolutionsRouteWithChildren
   '/solutions/building-management-system-bms': typeof SolutionsBuildingManagementSystemBmsRoute
+  '/solutions/intelligent-traffic-system-its': typeof SolutionsIntelligentTrafficSystemItsRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -72,6 +82,7 @@ export interface FileRouteTypes {
     | '/projects'
     | '/solutions'
     | '/solutions/building-management-system-bms'
+    | '/solutions/intelligent-traffic-system-its'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -79,6 +90,7 @@ export interface FileRouteTypes {
     | '/projects'
     | '/solutions'
     | '/solutions/building-management-system-bms'
+    | '/solutions/intelligent-traffic-system-its'
   id:
     | '__root__'
     | '/'
@@ -86,6 +98,7 @@ export interface FileRouteTypes {
     | '/projects'
     | '/solutions'
     | '/solutions/building-management-system-bms'
+    | '/solutions/intelligent-traffic-system-its'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -125,6 +138,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/solutions/intelligent-traffic-system-its': {
+      id: '/solutions/intelligent-traffic-system-its'
+      path: '/intelligent-traffic-system-its'
+      fullPath: '/solutions/intelligent-traffic-system-its'
+      preLoaderRoute: typeof SolutionsIntelligentTrafficSystemItsRouteImport
+      parentRoute: typeof SolutionsRoute
+    }
     '/solutions/building-management-system-bms': {
       id: '/solutions/building-management-system-bms'
       path: '/building-management-system-bms'
@@ -137,11 +157,14 @@ declare module '@tanstack/react-router' {
 
 interface SolutionsRouteChildren {
   SolutionsBuildingManagementSystemBmsRoute: typeof SolutionsBuildingManagementSystemBmsRoute
+  SolutionsIntelligentTrafficSystemItsRoute: typeof SolutionsIntelligentTrafficSystemItsRoute
 }
 
 const SolutionsRouteChildren: SolutionsRouteChildren = {
   SolutionsBuildingManagementSystemBmsRoute:
     SolutionsBuildingManagementSystemBmsRoute,
+  SolutionsIntelligentTrafficSystemItsRoute:
+    SolutionsIntelligentTrafficSystemItsRoute,
 }
 
 const SolutionsRouteWithChildren = SolutionsRoute._addFileChildren(

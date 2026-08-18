@@ -1,0 +1,1 @@
+var e=`/assets/svc-bms-2-DPiL6e5-.jpeg`;export{e as t};

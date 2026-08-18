@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import logoAsset from "../assets/logo.png";
 
 const navLinks: {
-  to: "/" | "/about" | "/solutions" | "/solutions/building-management-system-bms" | "/projects";
+  to: string;
   label: string;
   exact?: boolean;
 }[] = [
@@ -13,10 +13,11 @@ const navLinks: {
   { to: "/projects", label: "Projects" },
 ];
 
-const solutionLinks = [
+const solutionLinks: { to: string; label: string }[] = [
   { to: "/solutions", label: "All Solutions" },
   { to: "/solutions/building-management-system-bms", label: "BMS" },
-] as const;
+  { to: "/solutions/intelligent-traffic-system-its", label: "ITS" },
+];
 
 export function SiteNav() {
   const [scrolled, setScrolled] = useState(false);
@@ -96,7 +97,7 @@ export function SiteNav() {
           {navLinks.map((l) => (
             <Link
               key={l.to}
-              to={l.to}
+              to={l.to as any}
               activeOptions={l.exact ? { exact: true } : undefined}
               activeProps={{
                 className: "story-link text-sm font-medium text-foreground",
@@ -141,7 +142,7 @@ export function SiteNav() {
                 {solutionLinks.map((item) => (
                   <Link
                     key={item.to}
-                    to={item.to}
+                    to={item.to as any}
                     onClick={() => setSolutionsOpen(false)}
                     activeProps={{
                       className:
@@ -195,7 +196,7 @@ export function SiteNav() {
           {navLinks.map((l) => (
             <Link
               key={l.to}
-              to={l.to}
+              to={l.to as any}
               activeOptions={l.exact ? { exact: true } : undefined}
               onClick={() => setOpen(false)}
               activeProps={{
@@ -216,7 +217,7 @@ export function SiteNav() {
             {solutionLinks.map((item) => (
               <Link
                 key={item.to}
-                to={item.to}
+                to={item.to as any}
                 onClick={() => setOpen(false)}
                 activeProps={{
                   className:

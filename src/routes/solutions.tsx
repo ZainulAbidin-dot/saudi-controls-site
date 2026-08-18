@@ -53,7 +53,10 @@ export const Route = createFileRoute("/solutions")({
 function SolutionsLayout() {
   const { pathname } = useLocation();
 
-  if (pathname === "/solutions/building-management-system-bms") {
+  if (
+    pathname === "/solutions/building-management-system-bms" ||
+    pathname === "/solutions/intelligent-traffic-system-its"
+  ) {
     return <Outlet />;
   }
 

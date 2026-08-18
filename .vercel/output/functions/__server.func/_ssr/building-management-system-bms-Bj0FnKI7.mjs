@@ -1,6 +1,6 @@
 import "../_runtime.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { n as SiteNav, t as SiteFooter } from "./SiteFooter-BqwPtmLh.mjs";
+import { n as SiteNav, t as SiteFooter } from "./SiteFooter-BCI8bdFC.mjs";
 require_react();
 var import_jsx_runtime = require_jsx_runtime();
 var services = [

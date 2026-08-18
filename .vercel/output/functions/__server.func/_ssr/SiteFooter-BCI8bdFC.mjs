@@ -2,8 +2,8 @@ import { o as __toESM } from "../_runtime.mjs";
 import { t as logo_default } from "./logo-Dp6Mx8tO.mjs";
 import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
 import { _ as Link } from "../_libs/@tanstack/react-router+[...].mjs";
-import { C as ChevronDown, m as Menu, n as X, p as Phone } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/SiteFooter-BqwPtmLh.js
+import { M as ChevronDown, b as Menu, n as X, v as Phone } from "../_libs/lucide-react.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/SiteFooter-BCI8bdFC.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var navLinks = [
@@ -21,13 +21,20 @@ var navLinks = [
 		label: "Projects"
 	}
 ];
-var solutionLinks = [{
-	to: "/solutions",
-	label: "All Solutions"
-}, {
-	to: "/solutions/building-management-system-bms",
-	label: "BMS"
-}];
+var solutionLinks = [
+	{
+		to: "/solutions",
+		label: "All Solutions"
+	},
+	{
+		to: "/solutions/building-management-system-bms",
+		label: "BMS"
+	},
+	{
+		to: "/solutions/intelligent-traffic-system-its",
+		label: "ITS"
+	}
+];
 function SiteNav() {
 	const [scrolled, setScrolled] = (0, import_react.useState)(false);
 	const [open, setOpen] = (0, import_react.useState)(false);

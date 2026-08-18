@@ -1,0 +1,1 @@
+var e=`/assets/svc-bms-C9SIMlb4.jpg`,t=`/assets/svc-comms-2-B_h52KQ4.jpeg`;export{e as n,t};

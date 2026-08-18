@@ -2,15 +2,15 @@ import { o as __toESM } from "../_runtime.mjs";
 import { t as logo_default } from "./logo-Dp6Mx8tO.mjs";
 import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
 import { P as useRouter, _ as Link, c as HeadContent, f as createRouter, g as createRootRouteWithContext, h as createFileRoute, m as lazyRouteComponent, p as Outlet, s as Scripts, u as useRouterState } from "../_libs/@tanstack/react-router+[...].mjs";
-import { T as ArrowUp } from "../_libs/lucide-react.mjs";
+import { F as ArrowUp } from "../_libs/lucide-react.mjs";
 import { i as AnimatePresence } from "../_libs/framer-motion.mjs";
 import { t as motion } from "../_libs/motion.mjs";
 import { n as company, r as data_default, t as aboutData } from "./routes-BpdpevyR.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-DncIsmy4.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-DN99B_li.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-S07rTp60.css";
+var styles_default = "/assets/styles-D4-SBGIf.css";
 function reportLovableError(error, context = {}) {
 	if (typeof window === "undefined") return;
 	window.__lovableEvents?.captureException?.(error, {
@@ -204,7 +204,7 @@ function ErrorComponent({ error, reset }) {
 		})
 	});
 }
-var Route$5 = createRootRouteWithContext()({
+var Route$6 = createRootRouteWithContext()({
 	head: () => ({
 		meta: [
 			{ charSet: "utf-8" },
@@ -292,14 +292,14 @@ function RootShell({ children }) {
 	});
 }
 function RootComponent() {
-	const { queryClient } = Route$5.useRouteContext();
+	const { queryClient } = Route$6.useRouteContext();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(QueryClientProvider, {
 		client: queryClient,
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(PageTransition, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {}) }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ScrollToTop, {})]
 	});
 }
-var $$splitComponentImporter$4 = () => import("./solutions-BPCXnBIk.mjs");
-var Route$4 = createFileRoute("/solutions")({
+var $$splitComponentImporter$5 = () => import("./solutions-DCOAdSyj.mjs");
+var Route$5 = createFileRoute("/solutions")({
 	head: () => ({ meta: [
 		{ title: "Solutions —  Saudi Controls" },
 		{
@@ -315,10 +315,10 @@ var Route$4 = createFileRoute("/solutions")({
 			content: "Elevating innovation through bespoke technological mastery — where vision meets precision."
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$4, "component")
+	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$3 = () => import("./projects-1Sh6Zbzn.mjs");
-var Route$3 = createFileRoute("/projects")({
+var $$splitComponentImporter$4 = () => import("./projects-DF8bK1-f.mjs");
+var Route$4 = createFileRoute("/projects")({
 	head: () => ({ meta: [
 		{ title: "Projects — Saudi Controls" },
 		{
@@ -330,10 +330,10 @@ var Route$3 = createFileRoute("/projects")({
 			content: "Projects — Saudi Controls"
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$3, "component")
+	component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-var $$splitComponentImporter$2 = () => import("./about-kLXak1P6.mjs");
-var Route$2 = createFileRoute("/about")({
+var $$splitComponentImporter$3 = () => import("./about-CMhB2DsE.mjs");
+var Route$3 = createFileRoute("/about")({
 	head: () => ({ meta: [
 		{ title: "About — Saudi Controls " },
 		{
@@ -349,18 +349,75 @@ var Route$2 = createFileRoute("/about")({
 			content: "Where local talent meets global expertise to turn ambition into operational reality."
 		}
 	] }),
-	component: lazyRouteComponent($$splitComponentImporter$2, "component")
+	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$1 = () => import("./routes-CgnPQg_t.mjs");
+var $$splitComponentImporter$2 = () => import("./routes-BsuISejY.mjs");
 data_default.latest_news;
-var Route$1 = createFileRoute("/")({
+var Route$2 = createFileRoute("/")({
 	head: () => ({ meta: [{ title: `${company.name} — ${company.tagline}` }, {
 		name: "description",
 		content: aboutData.summary
 	}] }),
+	component: lazyRouteComponent($$splitComponentImporter$2, "component")
+});
+var $$splitComponentImporter$1 = () => import("./intelligent-traffic-system-its-3tqjULMV.mjs");
+var Route$1 = createFileRoute("/solutions/intelligent-traffic-system-its")({
+	head: () => ({
+		meta: [
+			{ title: "Intelligent Traffic System (ITS) in Saudi Arabia | Saudi Controls" },
+			{
+				name: "description",
+				content: "Saudi Controls delivers Intelligent Traffic System (ITS) solutions in Saudi Arabia for adaptive signal control, traffic monitoring, smart mobility, congestion management, emergency priority, public transport coordination and data-driven city operations."
+			},
+			{
+				name: "keywords",
+				content: "intelligent traffic system Saudi Arabia, ITS Saudi Arabia, smart traffic management, adaptive traffic signals, traffic signal control, urban mobility solutions, smart city traffic, traffic monitoring system, ATCS Saudi Arabia, congestion management, ITS company Saudi Arabia"
+			},
+			{
+				name: "robots",
+				content: "index, follow"
+			},
+			{
+				property: "og:title",
+				content: "Intelligent Traffic System (ITS) in Saudi Arabia | Saudi Controls"
+			},
+			{
+				property: "og:description",
+				content: "Adaptive traffic management, intelligent signal control and smart mobility solutions designed for safer, faster and more efficient urban transport networks."
+			},
+			{
+				property: "og:type",
+				content: "website"
+			},
+			{
+				property: "og:url",
+				content: "https://www.saudicontrols.com/solutions/intelligent-traffic-system-its"
+			},
+			{
+				property: "og:site_name",
+				content: "Saudi Controls"
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image"
+			},
+			{
+				name: "twitter:title",
+				content: "Intelligent Traffic System (ITS) in Saudi Arabia | Saudi Controls"
+			},
+			{
+				name: "twitter:description",
+				content: "Intelligent traffic system and smart mobility solutions for safer, faster and more efficient transport operations in Saudi Arabia."
+			}
+		],
+		links: [{
+			rel: "canonical",
+			href: "https://www.saudicontrols.com/solutions/intelligent-traffic-system-its"
+		}]
+	}),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./building-management-system-bms-Bf_hjgbb.mjs");
+var $$splitComponentImporter = () => import("./building-management-system-bms-Bj0FnKI7.mjs");
 var Route = createFileRoute("/solutions/building-management-system-bms")({
 	head: () => ({
 		meta: [
@@ -417,38 +474,46 @@ var Route = createFileRoute("/solutions/building-management-system-bms")({
 	}),
 	component: lazyRouteComponent($$splitComponentImporter, "component")
 });
-var SolutionsRoute = Route$4.update({
+var SolutionsRoute = Route$5.update({
 	id: "/solutions",
 	path: "/solutions",
-	getParentRoute: () => Route$5
+	getParentRoute: () => Route$6
 });
-var ProjectsRoute = Route$3.update({
+var ProjectsRoute = Route$4.update({
 	id: "/projects",
 	path: "/projects",
-	getParentRoute: () => Route$5
+	getParentRoute: () => Route$6
 });
-var AboutRoute = Route$2.update({
+var AboutRoute = Route$3.update({
 	id: "/about",
 	path: "/about",
-	getParentRoute: () => Route$5
+	getParentRoute: () => Route$6
 });
-var IndexRoute = Route$1.update({
+var IndexRoute = Route$2.update({
 	id: "/",
 	path: "/",
-	getParentRoute: () => Route$5
+	getParentRoute: () => Route$6
 });
-var SolutionsRouteChildren = { SolutionsBuildingManagementSystemBmsRoute: Route.update({
-	id: "/building-management-system-bms",
-	path: "/building-management-system-bms",
+var SolutionsIntelligentTrafficSystemItsRoute = Route$1.update({
+	id: "/intelligent-traffic-system-its",
+	path: "/intelligent-traffic-system-its",
 	getParentRoute: () => SolutionsRoute
-}) };
+});
+var SolutionsRouteChildren = {
+	SolutionsBuildingManagementSystemBmsRoute: Route.update({
+		id: "/building-management-system-bms",
+		path: "/building-management-system-bms",
+		getParentRoute: () => SolutionsRoute
+	}),
+	SolutionsIntelligentTrafficSystemItsRoute
+};
 var rootRouteChildren = {
 	IndexRoute,
 	AboutRoute,
 	ProjectsRoute,
 	SolutionsRoute: SolutionsRoute._addFileChildren(SolutionsRouteChildren)
 };
-var routeTree = Route$5._addFileChildren(rootRouteChildren)._addFileTypes();
+var routeTree = Route$6._addFileChildren(rootRouteChildren)._addFileTypes();
 var getRouter = () => {
 	return createRouter({
 		routeTree,
